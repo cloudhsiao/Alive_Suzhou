@@ -5,7 +5,7 @@
   "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/ZH8000/zh800.git"
+    "url": "https://github.com/ZH8000/Alive.git"
   },
   "dependencies": {
     "emailjs": "^0.3.16",
