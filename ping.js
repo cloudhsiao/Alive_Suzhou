@@ -19,12 +19,6 @@ fs.readFile(ipMappingFile, 'utf8', function(err, data) {
     return;
   }
   ipMappingData = JSON.parse(data);
-  
-  //console.log(ipMappingData);
-  //var tmp = ipMappingData.filter(function(obj) {
-  //  return obj.IP === '192.168.10.2';
-  //});
-  //console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~>>>>' + tmp[0].ID);
 });
 
 function initIpArray(ipRange, upper, lower, ignoreIPs) {

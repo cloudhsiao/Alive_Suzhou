@@ -8,12 +8,19 @@ var options = {
   ttl: 128
 };
 var session = ping.createSession(options);
-var pingSet = [];
+var pingSet = []; // where are all IPs that we need to ping.
 
 var iniRead = require('./readIni.js')(
   function(iniData) {
     initIpArray(iniData.ipRange1.range, iniData.ipRange1.upper, iniData.ipRange1.lower, iniData.ipRange1.ignore);
-    initIpArray(iniData.ipRange2.range, iniData.ipRange2.upper, iniData.ipRange2.lower, iniData.ipRange2.ignore); 
+    initIpArray(iniData.ipRange2.range, iniData.ipRange2.upper, iniData.ipRange2.lower, iniData.ipRange2.ignore);
+
+
+    setInterval(checkAlive, 3000);
+    setInterval(getAliveResult, 5000, iniData.errorTimes);
+
+    // setInterval(checkAlive, iniData.pingTime);
+    // setInterval(getAliveResult, iniData.checkTime, iniData.errorTimes);
   }
 );
 
@@ -22,6 +29,36 @@ function initIpArray(ipRange, upper, lower, ignoreIPs) {
     pingSet[ipRange + x] = 0;
   }
   for(var x = 0; x < ignoreIPs.length; x++) {
-    delete pintSet[ipRange + ignoreIPs[x]]
+    delete pingSet[ipRange + ignoreIPs[x]]
   }
+}
+
+function checkAlive() {
+  console.log('checkAlive');
+  for(var ip in pingSet) {
+    setTimeout(pingHost(ip), 1500);
+  }
+}
+
+function pingHost(host) {
+  session.pingHost(host, function(err, ip) {
+    if (err) {
+      pingSet[ip] = 1;
+    } else {
+      pingSet[ip] = 0;
+    }
+  });
+
+}
+
+function getAliveResult(errorTimes) {
+  var failedIp = [];
+  for(var ip in pingSet) {
+    if(pingSet[ip] >= errorTimes) {
+      var data = {};
+      data['IP'] = ip;
+      failedIp.push(data);
+    }
+  }
+  process.send(failedIp);
 }
