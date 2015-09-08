@@ -2,8 +2,9 @@ var flow = require('nimble');
 var child_process = require('child_process');
 
 var readIp = require('./libs/readIp.js');
-var dbStatus = require('./libs/dbStatus.js');
 var pingIp = child_process.fork('./libs/pingIp.js');
+var dbStatus = require('./libs/dbStatus.js');
+var dbQty = require('./libs/dbQty.js');
 
 var ipArray = []; // data from ipMapping.json
 var pingResult; // data from pingIp.js
@@ -18,7 +19,7 @@ var pingResult; // data from pingIp.js
 flow.series([
   // 1. first of all, we read all ip from the file.
   function(callback) {
-    console.log('111111111111111111111111111111111111111111111111111111111');
+    console.log('111111111111111111111111111111111111111111111111111111111111');
     readIp.read(__dirname + '/ipMapping.json', function(data){
       ipArray = JSON.parse(data);
       callback();
@@ -26,7 +27,7 @@ flow.series([
   },
   // 2. get ping data.
   function(callback) {
-    console.log('222222222222222222222222222222222222222222222222222222222');
+    console.log('222222222222222222222222222222222222222222222222222222222222');
     var idx; 
     pingIp.on('message', function(m) {
       for(idx = 0; idx < ipArray.length; idx++) {
@@ -52,9 +53,18 @@ flow.series([
   },
   // 3. get machine status
   function(callback) {
-    console.log('33333333333333333333333333333333333333333333333333333333333');
+    console.log('333333333333333333333333333333333333333333333333333333333333');
     dbStatus.getStatus(function(result) {
       console.log(result);
+      callback();
+    });
+  },
+  // 4. get machine qty (for good product count)
+  function(callback) {
+    console.log('444444444444444444444444444444444444444444444444444444444444');
+    dbQty.getQty(function(result) {
+      console.log(result);
+      callback();
     });
   }
 ]);
