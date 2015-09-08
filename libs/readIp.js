@@ -1,7 +1,5 @@
 var fs = require('fs');
 
-var result;
-
 exports.read = function(file, callback) {
   fs.readFile(file, 'utf8', function(err, data) {
     if(err) {
