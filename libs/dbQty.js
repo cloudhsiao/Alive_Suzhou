@@ -1,3 +1,4 @@
+var moment = require('moment');
 var MongoClient = require('mongodb').MongoClient;
 var assert = require('assert');
 var objectId = require('mongodb').ObjectID;
@@ -13,7 +14,7 @@ exports.getQty = function (callback) {
     var collection = db.collection('dailyMachineCount');
 
     var result = [];
-    var stream = collection.find({}).stream();
+    var stream = collection.find({'insertDate':moment().format('YYYY-MM-DD')}).stream();
     stream.on("data", function(doc) {
       //console.log(doc.machineID + "::" + doc.count_qty);
       var item = {};

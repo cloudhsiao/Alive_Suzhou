@@ -63,7 +63,7 @@ flow.series([
   function(callback) {
     console.log('444444444444444444444444444444444444444444444444444444444444');
     dbQty.getQty(function(result) {
-      console.log(result);
+      console.log(result.length);
       callback();
     });
   }
