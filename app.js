@@ -18,6 +18,7 @@ var pingResult; // data from pingIp.js
 flow.series([
   // 1. first of all, we read all ip from the file.
   function(callback) {
+    console.log('111111111111111111111111111111111111111111111111111111111');
     readIp.read(__dirname + '/ipMapping.json', function(data){
       ipArray = JSON.parse(data);
       callback();
@@ -25,12 +26,13 @@ flow.series([
   },
   // 2. get ping data.
   function(callback) {
+    console.log('222222222222222222222222222222222222222222222222222222222');
     var idx; 
     pingIp.on('message', function(m) {
-      for(idx = 0; idx < m.length; idx++) {
-        console.log('>>>>>' + m[idx].IP + '>>>>>' + m[idx].ALIVE + '>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>');
-        var data = ipArray.filter(function(obj) {
-          return obj.IP === m[idx].IP;
+      for(idx = 0; idx < ipArray.length; idx++) {
+        //console.log('>>>>>' + m[idx].IP + '>>>>>' + m[idx].ALIVE + '>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>');
+        var data = m.filter(function(obj) {
+          return obj.IP === ipArray[idx].IP;
         });
         if (data.length > 0) {
           ipArray[idx].ALIVE = 0;
@@ -50,7 +52,8 @@ flow.series([
   },
   // 3. get machine status
   function(callback) {
-    dbStatus.getStatus(function() {
+    console.log('33333333333333333333333333333333333333333333333333333333333');
+    dbStatus.getStatus(function(result) {
       console.log(result);
     });
   }

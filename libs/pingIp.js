@@ -57,6 +57,7 @@ function getAliveResult(errorTimes) {
     if(pingSet[ip] >= errorTimes) {
       var data = {};
       data['IP'] = ip;
+      // only return failed IPs.
       failedIp.push(data);
     }
   }
