@@ -2,9 +2,8 @@ var express = require('express');
 var app = express();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
-var child_process = require('child_process');s
 var email = require('emailjs');
-var app = require('app.js');
+var run = require('./app.js');
 
 var errorRate = 0.0;
 var errerAlert = 0.30;
@@ -23,7 +22,7 @@ app.use(express.static(__dirname + '/images'));
 
 
 app.get('/pic', function(req, res) {
-  res.sendFile(__dirname + 'boxStatusPic.html');
+  res.sendFile(__dirname + '/boxStatusPic.html');
 });
 
 io.on('connection', function(socket) {
@@ -41,13 +40,13 @@ io.on('connection', function(socket) {
   });
 });
 
-http.listen(9999, function() {
-  console.log('listening on 9999');
+http.listen(8080, function() {
+  console.log('listening on 8080');
 });
 
-app.start(function(ipArray, dailySum) {
+run.start(function(ipArray, dailySum) {
   console.log('!!!!!!!!!!!!!!!!!!' + ipArray);
-  console.log('!!!!!!!!!!!!!!!!!!' + dailySum);
+  console.log('!!!!!!!!!!!!!!!!!!' + dailySum.MEDIUM_E);
 });
 
 function sendMail(msg) {

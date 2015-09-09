@@ -85,15 +85,16 @@ flow.series([
             callback();
           });
         }, 
-        function() {
+        function(callback) {
           dbDaily.getDailySum(function(data) {
             dailySum = data;
             console.log('daily' + data.MEDIUM_E + ':' + data.MEDIUM_G + ':' + data.MEDIUM_A);
             callback();
           });
         },
-        function() {
+        function(callback) {
           cb(ipArray, dailySum);
+          callback();
         }
       ]);
     });

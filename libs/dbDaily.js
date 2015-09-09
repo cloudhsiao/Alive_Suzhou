@@ -21,7 +21,7 @@ const TYPE_A = 3;
 const TYPE_A4 = 4;
 const TYPE_TC = 5;
 
-exports.getDailySum = function queryDatabase(callback) {
+exports.getDailySum = function queryDatabase(cb) {
   MongoClient.connect("mongodb://localhost:27017/zhenhai", function(err, db) {
     if(err) { return console.dir(err); }
 
@@ -134,7 +134,7 @@ exports.getDailySum = function queryDatabase(callback) {
       console.log(SMALL_TC);
       console.log("---------------------------------------------------");
 */
-      callback(data);
+      cb(data);
     });
   });
 }
