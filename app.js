@@ -5,11 +5,12 @@ var readIp = require('./libs/readIp.js');
 var pingIp = child_process.fork('./libs/pingIp.js');
 var dbStatus = require('./libs/dbStatus.js');
 var dbQty = require('./libs/dbQty.js');
+var dbDaily = require('./libs/dbDaily.js');
 
 var ipArray = []; // data from ipMapping.json
 var pingResult; // data from pingIp.js
 
-function getSTATUS(callback) {
+function getSTATUS(cb) {
   console.log('333333333333333333333333333333333333333333333333333333333333');
   dbStatus.getStatus(function(result) {
     var idx;
@@ -22,11 +23,11 @@ function getSTATUS(callback) {
         console.log('STATUS: ' + ipArray[idx].ID + '-->' + ipArray[idx].STATUS);
       }
     }
-    callback();
+    cb();
   });
 }
 
-function getQTY(callback) {
+function getQTY(cb) {
   console.log('444444444444444444444444444444444444444444444444444444444444');
   dbQty.getQty(function(result) {
     var idx;
@@ -39,7 +40,7 @@ function getQTY(callback) {
         console.log('QTY: ' + ipArray[idx].ID + '-->' + ipArray[idx].QTY);
       }
     }
-    callback();
+    cb();
   });
 }
 
@@ -70,11 +71,25 @@ flow.series([
           console.log('<<<<!' + ipArray[idx].IP + '<<<<<' + ipArray[idx].ALIVE);
         }
       }
-      getSTATUS(function() {
-        getQTY(function() {
-          console.log(ipArray);
-        });
-      });
+
+      flow.serial([
+        function(callback) {
+          getSTATUS(function() {
+            callback();
+          });
+        },
+        function(callback) {
+          getQTY(function() {
+            console.log(ipArray);
+            callback();
+          });
+        }, 
+        function() {
+          dbDaily.getDailySum(function(data) {
+            console.log('daily' + data);
+          });
+        }
+      ]);
     });
     callback();
   },
