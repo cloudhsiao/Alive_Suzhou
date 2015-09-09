@@ -9,7 +9,7 @@ month = (month < 10 ? "0" : "") + month;
 var day = date.getDate();
 day = (day < 10 ? "0" : "") + day;
 var today = year + "-" + month + "-" + day;
-console.log("today:" + today);
+//console.log("today:" + today);
 
 const BIG = "16 - 18";
 const MEDIUM = "10 - 12.5";
@@ -109,27 +109,31 @@ exports.getDailySum = function queryDatabase(callback) {
       data["SMALL_A"] = SMALL_A;
       data["SMALL_A4"] = SMALL_A4;
       data["SMALL_TC"] = SMALL_TC;
-  /*
+
+/*
       console.log("---------------------------------------------------");
+      console.log('BIG');
       console.log(BIG_E);
       console.log(BIG_G);
       console.log(BIG_A);
       console.log(BIG_A4);
       console.log(BIG_TC);
   
+      console.log('MEDIUM');
       console.log(MEDIUM_E);
       console.log(MEDIUM_G);
       console.log(MEDIUM_A);
       console.log(MEDIUM_A4);
       console.log(MEDIUM_TC);
   
+      console.log('SMALL');
       console.log(SMALL_E);
       console.log(SMALL_G);
       console.log(SMALL_A);
       console.log(SMALL_A4);
       console.log(SMALL_TC);
       console.log("---------------------------------------------------");
-  */
+*/
       callback(data);
     });
   });
