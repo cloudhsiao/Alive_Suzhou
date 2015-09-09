@@ -26,11 +26,11 @@ flow.series([
       callback();
     });
   },
-  function(callback) {
-    readIni(function(data) {
-      console.log(data);
-    });
-  },
+  //function(callback) {
+  //  readIni(function(data) {
+  //    console.log(data);
+  //  });
+  //},
   // 2. get ping data.
   function(callback) {
     console.log('222222222222222222222222222222222222222222222222222222222222');
