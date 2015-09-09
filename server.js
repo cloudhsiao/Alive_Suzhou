@@ -47,6 +47,8 @@ http.listen(8080, function() {
 run.start(function(ipArray, dailySum) {
   console.log('!!!!!!!!!!!!!!!!!!' + ipArray);
   console.log('!!!!!!!!!!!!!!!!!!' + dailySum.MEDIUM_E);
+  io.emit('PING', ipArray);
+  io.emit('SUM', dailySum)
 });
 
 function sendMail(msg) {

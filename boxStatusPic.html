@@ -17,7 +17,7 @@
 
             var totalMachine = 0, totalRed = 0, totalGray = 0;
 
-            socket.on('alive', function(msg) {
+            socket.on('PING', function(msg) {
               $('#data table').empty();
               totalE = 0,    totalG = 0,    totalA = 0,    totalTC = 0;
               notReadyE = 0, notReadyG = 0, notReadyA = 0, notReadyTC = 0;
@@ -42,7 +42,9 @@
                                             '<td width="10%">' + json.TYPE + '</td>' +
                                             '<td width="10%">' + json.IP   + '</td>' +
                                             '<td width="20%">' + json.NOTE + '</td>' +
-                                            '<td width="50%">' + json.DATE + '</td></tr>');
+                                            '<td width="10%">' + json.STATUS + '</td>' +
+                                            '<td width="10%">' + json.ALIVE + '</td>' +
+                                            '<td width="20%">' + json.QTY + '</td>' +);
                 // failed machine will fill with RED color
                 if (mapDoc.getElementById(json.ID)) {
                   mapDoc.getElementById(json.ID).style.fill = "#ff0000";
@@ -150,7 +152,7 @@
               $('#PENTAGON_AVAILABILITY').html(resultTC.toFixed(2) + '%');
             });
 
-            socket.on('dailyCount', function(msg) {
+            socket.on('SUM', function(msg) {
               var data = jQuery.parseJSON(msg);
               $('#BIG_E').html(data.BIG_E);
               $('#BIG_G').html(data.BIG_G);
