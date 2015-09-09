@@ -1,7 +1,7 @@
 var flow = require('nimble');
 var child_process = require('child_process');
 
-var readIni = require('./libs/readIni.js');
+//var readIni = require('./libs/readIni.js');
 var readIp = require('./libs/readIp.js');
 var pingIp = child_process.fork('./libs/pingIp.js');
 var dbStatus = require('./libs/dbStatus.js');
