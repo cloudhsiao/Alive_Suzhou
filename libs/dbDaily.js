@@ -131,7 +131,6 @@ exports.getDailySum = function queryDatabase(callback) {
       console.log("---------------------------------------------------");
   */
       callback(data);
-      process.send(data);
     });
   });
 }

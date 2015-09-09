@@ -72,7 +72,7 @@ flow.series([
         }
       }
 
-      flow.serial([
+      flow.series([
         function(callback) {
           getSTATUS(function() {
             callback();
@@ -86,19 +86,11 @@ flow.series([
         }, 
         function() {
           dbDaily.getDailySum(function(data) {
-            console.log('daily' + data);
+            console.log('daily' + data.MEDIUM_E + ':' + data.MEDIUM_G + ':' + data.MEDIUM_A);
           });
         }
       ]);
     });
-    callback();
-  },
-  // 3. get machine status
-  function(callback) {
-    callback();
-  },
-  // 4. get machine qty (for good product count)
-  function(callback) {
     callback();
   }
 ]);
