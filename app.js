@@ -22,10 +22,11 @@ function getSTATUS(callback) {
         console.log('STATUS: ' + ipArray[idx].ID + '-->' + ipArray[idx].STATUS);
       }
     }
+    callback();
   });
 }
 
-function getQTY() {
+function getQTY(callback) {
   console.log('444444444444444444444444444444444444444444444444444444444444');
   dbQty.getQty(function(result) {
     var idx;
@@ -70,47 +71,19 @@ flow.series([
         }
       }
       getSTATUS(function() {
-        getQTY();
+        getQTY(function() {
+          console.log(ipArray);
+        });
       });
     });
     callback();
   },
   // 3. get machine status
   function(callback) {
-/*
-    console.log('333333333333333333333333333333333333333333333333333333333333');
-    dbStatus.getStatus(function(result) {
-      var idx;
-      for(idx = 0; idx < ipArray.length; idx++) {
-        var data = result.filter(function(obj) {
-          return obj.ID === ipArray[idx].ID;
-        });
-        if(data.length > 0) {
-          ipArray[idx].STATUS = data[0].STATUS;
-          console.log('STATUS: ' + ipArray[idx].ID + '-->' + ipArray[idx].STATUS);
-        }
-      }
-      callback();
-    });
-*/
+    callback();
   },
   // 4. get machine qty (for good product count)
   function(callback) {
-/*
-    console.log('444444444444444444444444444444444444444444444444444444444444');
-    dbQty.getQty(function(result) {
-      var idx;
-      for(idx = 0; idx < ipArray.length; idx++) {
-        var data = result.filter(function(obj) {
-          return obj.ID === ipArray[idx].ID;
-        });
-        if(data.length > 0) {
-          ipArray[idx].QTY = data[0].QTY;
-          console.log('QTY: ' + ipArray[idx].ID + '-->' + ipArray[idx].QTY);
-        }
-      }
-      callback();
-    });
-*/
+    callback();
   }
 ]);
