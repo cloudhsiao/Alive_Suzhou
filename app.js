@@ -8,7 +8,7 @@ var dbQty = require('./libs/dbQty.js');
 var dbDaily = require('./libs/dbDaily.js');
 
 var ipArray = []; // data from ipMapping.json
-var pingResult; // data from pingIp.js
+var dailySum = {};
 
 function getSTATUS(cb) {
   console.log('333333333333333333333333333333333333333333333333333333333333');
@@ -44,6 +44,7 @@ function getQTY(cb) {
   });
 }
 
+exports.start = function(cb) {
 flow.series([
   // 1. first of all, we read all ip from the file.
   function(callback) {
@@ -86,11 +87,17 @@ flow.series([
         }, 
         function() {
           dbDaily.getDailySum(function(data) {
+            dailySum = data;
             console.log('daily' + data.MEDIUM_E + ':' + data.MEDIUM_G + ':' + data.MEDIUM_A);
+            callback();
           });
+        },
+        function() {
+          cb(ipArray, dailySum);
         }
       ]);
     });
     callback();
   }
 ]);
+}
