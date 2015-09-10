@@ -84,7 +84,7 @@
                                         '<th>IP地址</th>'+ 
                                         '<th>備註</th>' + 
                                         '<th>機器狀態</th>' + 
-                                        '<th>Pi上線狀態</th>' + 
+                                        '<th>監控上線狀態(1:線上)</th>' + 
                                         '<th>今日良品數</th></tr>');
               for (var idx = 0; idx < totalData.length; idx++) {
                 $('#data table').append('<tr><td width="10%">' + totalData[idx].ID   + '</td>' +
@@ -382,6 +382,45 @@
             </table>
         </div>
         <!-- 分隔線分隔線分隔線分隔線分隔線分隔線分隔線分隔線分隔線分隔線分隔線分隔線分隔線分隔線分隔線分隔線分隔線分隔線分隔線分隔線 -->
+        <br /><br /><br />
+        <div id="Sample">
+            <table border="0" width="50%">
+                <caption><b>顏色代表狀態</b></caption>
+                <thead>
+                    <tr>
+                        <th>顏色</th><th>代表狀態</th>
+                    </tr>
+                </thead>
+                <tbody align="center">
+                    <tr>
+                      <td width="20%" bgcolor="#00ff00"/>
+                      <td width="20%" align="left">機器正常運作</td>
+                    </tr>
+                    <tr>
+                      <td width="20%" bgcolor="#006600"/>
+                      <td width="20%" align="left">機器正常，但沒有良品數</td>
+                    </tr>
+                    <tr>
+                      <td width="20%" bgcolor="#ffff00"/>
+                      <td width="20%" align="left">閒置(05:idle)</td>
+                    </tr>
+                    <tr>
+                      <td width="20%" bgcolor="#ff0000"/>
+                      <td width="20%" align="left">待機(10:standby)</td>
+                    </tr>
+                    <tr>
+                      <td width="20%" bgcolor="#0000ff"/>
+                      <td width="20%" align="left">機器未上線</td>
+                    </tr>
+                    <tr>
+                      <td width="20%" bgcolor="#cccccc"/>
+                      <td width="20%" align="left">未安裝監控</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- 分隔線分隔線分隔線分隔線分隔線分隔線分隔線分隔線分隔線分隔線分隔線分隔線分隔線分隔線分隔線分隔線分隔線分隔線分隔線分隔線 -->
+        <br />
         <object onload="loadMapOK();" data="/optimized_2.svg" type="image/svg+xml" id="factory_map" width="100%" height="100%"></object>
 <!--        <object onload="loadMapOK();" data="/factory_map.svg" type="image/svg+xml" id="factory_map" width="100%" height="100%"></object> -->
         <!-- 分隔線分隔線分隔線分隔線分隔線分隔線分隔線分隔線分隔線分隔線分隔線分隔線分隔線分隔線分隔線分隔線分隔線分隔線分隔線分隔線 -->
