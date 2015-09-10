@@ -14,6 +14,8 @@ var mailServer = email.server.connect({
   ssl: false
 });
 
+var tmpIpArray;
+var tmpDailySum;
 
 console.log("Alive server start.");
 
@@ -28,6 +30,12 @@ app.get('/pic', function(req, res) {
 io.on('connection', function(socket) {
   console.log('a user connected');
 
+  socket.on('boxStatusPic', function(msg) {
+    if(tmpIpArray != null && tmpDailySum != null) {
+      io.emit('PING', JSON.stringify(tmpIpArray));
+      io.emit('SUM', JSON.stringify(tmpDailySum));
+    }
+  });
 /*
   socket.on('errorRate', function(msg) {
     errorRate = msg;
@@ -45,10 +53,12 @@ http.listen(8080, function() {
 });
 
 run.start(function(ipArray, dailySum) {
-  console.log('!!!!!!!!!!!!!!!!!!' + ipArray);
-  console.log('!!!!!!!!!!!!!!!!!!' + dailySum.MEDIUM_E);
-  io.emit('PING', ipArray);
-  io.emit('SUM', dailySum)
+  //console.log('!!!!!!!!!!!!!!!!!!' + ipArray);
+  //console.log('!!!!!!!!!!!!!!!!!!' + dailySum.MEDIUM_E);
+  tmpIpArray = ipArray;
+  tmpDailySum = dailySum;
+  io.emit('PING', JSON.stringify(ipArray));
+  io.emit('SUM', JSON.stringify(dailySum));
 });
 
 function sendMail(msg) {

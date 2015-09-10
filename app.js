@@ -20,7 +20,7 @@ function getSTATUS(cb) {
       });
       if(data.length > 0) {
         ipArray[idx].STATUS = data[0].STATUS;
-        console.log('STATUS: ' + ipArray[idx].ID + '-->' + ipArray[idx].STATUS);
+        //console.log('STATUS: ' + ipArray[idx].ID + '-->' + ipArray[idx].STATUS);
       }
     }
     cb();
@@ -37,7 +37,7 @@ function getQTY(cb) {
       });
       if(data.length > 0) {
         ipArray[idx].QTY = data[0].QTY;
-        console.log('QTY: ' + ipArray[idx].ID + '-->' + ipArray[idx].QTY);
+        //console.log('QTY: ' + ipArray[idx].ID + '-->' + ipArray[idx].QTY);
       }
     }
     cb();
@@ -66,10 +66,10 @@ flow.series([
         });
         if (data.length > 0) { // if have data! it must be NOT alive -> 0 (false)
           ipArray[idx].ALIVE = 0;
-          console.log('<<<<<' + ipArray[idx].IP + '<<<<<' + ipArray[idx].ALIVE);
+          //console.log('<<<<<' + ipArray[idx].IP + '<<<<<' + ipArray[idx].ALIVE);
         } else {
           ipArray[idx].ALIVE = 1;
-          console.log('<<<<!' + ipArray[idx].IP + '<<<<<' + ipArray[idx].ALIVE);
+          //console.log('<<<<!' + ipArray[idx].IP + '<<<<<' + ipArray[idx].ALIVE);
         }
       }
 
@@ -81,14 +81,14 @@ flow.series([
         },
         function(callback) {
           getQTY(function() {
-            console.log(ipArray);
+            //console.log(ipArray);
             callback();
           });
         }, 
         function(callback) {
           dbDaily.getDailySum(function(data) {
             dailySum = data;
-            console.log('daily' + data.MEDIUM_E + ':' + data.MEDIUM_G + ':' + data.MEDIUM_A);
+            //console.log('daily' + data.MEDIUM_E + ':' + data.MEDIUM_G + ':' + data.MEDIUM_A);
             callback();
           });
         },

@@ -16,11 +16,11 @@ var iniRead = require('./readIni.js')(
     initIpArray(iniData.ipRange2.range, iniData.ipRange2.upper, iniData.ipRange2.lower, iniData.ipRange2.ignore);
 
 
-    setInterval(checkAlive, 7000);
-    setInterval(getAliveResult, 10000, iniData.errorTimes);
+    //setInterval(checkAlive, 7000);
+    //setInterval(getAliveResult, 10000, iniData.errorTimes);
 
-    // setInterval(checkAlive, iniData.pingTime);
-    // setInterval(getAliveResult, iniData.checkTime, iniData.errorTimes);
+    setInterval(checkAlive, iniData.pingTime);
+    setInterval(getAliveResult, iniData.checkTime, iniData.errorTimes);
   }
 );
 

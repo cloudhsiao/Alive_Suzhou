@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf8" />
         <title>Box Connection Status</title>
-        <script src="/jquery-1.11.1.min.js"></script>
+        <script src="/jquery-1.11.3.min.js"></script>
         <script src="/socket.io-1.2.0.js"></script>
         <script>
             var socket = io();
@@ -18,16 +18,85 @@
             var totalMachine = 0, totalRed = 0, totalGray = 0;
 
             socket.on('PING', function(msg) {
-              $('#data table').empty();
-              totalE = 0,    totalG = 0,    totalA = 0,    totalTC = 0;
-              notReadyE = 0, notReadyG = 0, notReadyA = 0, notReadyTC = 0;
-              failE = 0,     failG = 0,     failA = 0,     failTC = 0;
+              console.log('get PING!');
+              // 0. parse income data into totalData
+              totalData = jQuery.parseJSON(msg);
 
+              // 1. get .SVG file content
               if (mapDoc == null) { 
                 var factoryMap = document.getElementById("factory_map");
                 mapDoc = factoryMap.contentDocument;
               }
 
+              // 2. get all elements with param, class='machine'
+              var allMachine = mapDoc.getElementsByClassName("machine");
+
+              // 3. setup color
+              for (var idx = 0; idx < allMachine.length; idx++) {
+                // special for G111_2, G111_3
+                if (allMachine[idx].id === 'G111_2' || allMachine[idx].id === 'G111_3') {
+                  allMachine[idx].style.fill = '#cccccc';
+                }
+                var data = totalData.filter(function(obj) {
+                  return obj.ID === allMachine[idx].id;
+                });
+                if (data.length > 0) {
+/*
+                  console.log(data[0].ID + 
+                    ', IP: '     + data[0].IP +
+                    ', NOTE: '   + data[0].NOTE +
+                    ', STATUS: ' + data[0].STATUS + 
+                    ', ALIVE: '  + data[0].ALIVE +
+                    ', QTY: '    + data[0].QTY);
+*/
+                  if (data[0].ALIVE == 1) {
+                    allMachine[idx].style.fill = '#00ff00';
+                  } else {
+                    allMachine[idx].style.fill = '#0000ff';
+                  }
+                  if (data[0].STATUS === '01') { // working
+                    allMachine[idx].style.fill = '#00ff00';
+                    if (data[0].QTY == 0) { // working, but qty = 0
+                      allMachine[idx].style.fill = '#006600';
+                    }
+                  } else 
+                  if (data[0].STATUS === '05') { // idle
+                    allMachine[idx].style.fill = '#ffff00';
+                  } else 
+                  if (data[0].STATUS === '10') { // standby
+                    allMachine[idx].style.fill = '#ff0000';
+                  }
+
+                  if (data[0].ALIVE == 0) { // can't ping 
+                    //allMachine[idx].style.fill = '#0000ff';
+                  }
+
+                  if (data[0].NOTE !== '') { // not install
+                    allMachine[idx].style.fill = '#cccccc';
+                  }
+                }
+              }
+
+              $('#data table').empty();
+              $('#data table').append('<tr>' +
+                                        '<th>ID</th>' + 
+                                        '<th>類型</th>' + 
+                                        '<th>IP地址</th>'+ 
+                                        '<th>備註</th>' + 
+                                        '<th>機器狀態</th>' + 
+                                        '<th>Pi上線狀態</th>' + 
+                                        '<th>今日品數</th></tr>');
+              for (var idx = 0; idx < totalData.length; idx++) {
+                $('#data table').append('<tr><td width="10%">' + totalData[idx].ID   + '</td>' +
+                                            '<td width="10%">' + totalData[idx].TYPE + '</td>' +
+                                            '<td width="10%">' + totalData[idx].IP   + '</td>' +
+                                            '<td width="10%">' + totalData[idx].NOTE + '</td>' +
+                                            '<td width="10%">' + totalData[idx].STATUS + '</td>' +
+                                            '<td width="10%">' + totalData[idx].ALIVE + '</td>' +
+                                            '<td width="10%">' + totalData[idx].QTY + '</td></tr>');
+              }
+
+              /*
               var allMachine = mapDoc.getElementsByClassName("machine");
               for (var m = 0; m < allMachine.length; m++) {
                 allMachine[m].style.fill = "#00ff00";
@@ -150,9 +219,11 @@
               $('#PENTAGON_FAIL').html(failTC);
               var resultTC = new Number(workTC/(totalTC - notReadyTC) * 100);
               $('#PENTAGON_AVAILABILITY').html(resultTC.toFixed(2) + '%');
+              */
             });
 
             socket.on('SUM', function(msg) {
+              /*
               var data = jQuery.parseJSON(msg);
               $('#BIG_E').html(data.BIG_E);
               $('#BIG_G').html(data.BIG_G);
@@ -173,8 +244,10 @@
               $('#SMALL_TC').html(data.SMALL_TC);
 
               updateDate();
+              */
             });
 
+/*
             socket.on('dbConnect', function(msg) {
               var data = jQuery.parseJSON(msg);
               $.each(data, function(index, json) {
@@ -197,6 +270,7 @@
                 }
               })
             });
+*/
 
             function getCSVfile() {
                 var fileName = "report";
@@ -250,11 +324,6 @@
                 $('#nowTime_2').html(dformat);
             }
 
-            /*
-            $(document).ready(function() {
-                console.log('webpage loaded');
-                socket.emit('boxStatusPic','loadFinish');
-            });*/
             function loadMapOK() {
                 var factoryMap = document.getElementById("factory_map");
                 mapDoc = factoryMap.contentDocument;
