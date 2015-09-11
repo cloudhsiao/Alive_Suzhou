@@ -36,7 +36,7 @@ function initIpArray(ipRange, upper, lower, ignoreIPs) {
 function checkAlive() {
   console.log('checkAlive');
   for(var ip in pingSet) {
-    setTimeout(pingHost(ip), 1500);
+    setTimeout(pingHost(ip), 1000);
   }
 }
 

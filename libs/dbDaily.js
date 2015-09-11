@@ -13,7 +13,7 @@ var today = year + "-" + month + "-" + day;
 
 const BIG = "16 - 18";
 const MEDIUM = "10 - 12.5";
-const SMALL = "5 -8";
+const SMALL = "5 - 8";
 
 const TYPE_E = 1;
 const TYPE_G = 2;
@@ -82,9 +82,9 @@ exports.getDailySum = function queryDatabase(cb) {
       } else if (item.capacityRange === SMALL && item.machineType === TYPE_A) {
         SMALL_A += item.count_qty;
       } else if (item.capacityRange === SMALL && item.machineType === TYPE_A4) {
-        SMALL += item.count_qty;
+        SMALL_A4 += item.count_qty;
       } else if (item.capacityRange === SMALL && item.machineType === TYPE_TC) {
-        console.log("small tc:" + item.count_qty);
+        //console.log("small tc:" + item.count_qty);
         SMALL_TC += item.count_qty;
       }
     });
