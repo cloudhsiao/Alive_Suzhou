@@ -88,7 +88,7 @@ flow.series([
         function(callback) {
           dbDaily.getDailySum(function(data) {
             dailySum = data;
-            //console.log('daily' + data.MEDIUM_E + ':' + data.MEDIUM_G + ':' + data.MEDIUM_A);
+            //console.log('daily - ' + data.BIG_E + ':' + data.MEDIUM_E + ':' + data.SMALL_E);
             callback();
           });
         },

@@ -1,15 +1,16 @@
 var MongoClient = require('mongodb').MongoClient;
+var moment = require('moment');
 
-var offsetOf7Hours = 7 * 60 * 60 * 1000
-var originalDate = new Date();
-var date = new Date(originalDate.getTime() - offsetOf7Hours);
-var year = date.getFullYear();
-var month = date.getMonth() + 1;
-month = (month < 10 ? "0" : "") + month;
-var day = date.getDate();
-day = (day < 10 ? "0" : "") + day;
-var today = year + "-" + month + "-" + day;
-//console.log("today:" + today);
+//var offsetOf7Hours = 7 * 60 * 60 * 1000
+//var originalDate = new Date();
+//var date = new Date(originalDate.getTime() - offsetOf7Hours);
+//var year = date.getFullYear();
+//var month = date.getMonth() + 1;
+//month = (month < 10 ? "0" : "") + month;
+//var day = date.getDate();
+//day = (day < 10 ? "0" : "") + day;
+//var today = year + "-" + month + "-" + day;
+var today;// = moment().format('YYYY-MM-DD');
 
 const BIG = "16 - 18";
 const MEDIUM = "10 - 12.5";
@@ -46,6 +47,14 @@ exports.getDailySum = function queryDatabase(cb) {
     var SMALL_TC = 0;
 
     var data = {};
+
+     console.log(moment().format('h') + ' ' + moment().format('H'));
+    if (moment().format('H') < 7) {
+      today = moment().subtract(1, 'day').format('YYYY-MM-DD');
+    } else {
+      today = moment().format('YYYY-MM-DD');
+    }
+    console.log("dbDaily.js - today:" + today);
     var stream = collection.find({"shiftDate":today}).stream();
 
     stream.on("data", function(item) {

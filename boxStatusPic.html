@@ -17,6 +17,34 @@
 
             var totalMachine = 0, totalRed = 0, totalGray = 0;
 
+            function showPopup() {
+                var d = new Date();
+                if (d.getHours()<7) {
+                    d.setDate(d.getDate()-1);
+                }
+                var type = 0;
+                var ID = this.id;
+                if (ID.indexOf('E') > -1) {                         // 加締
+                  type = 1;
+                } else
+                if (ID.indexOf('G') > -1) {                         // 組立
+                  type = 2;
+                } else
+                if (ID.indexOf('A') > -1) {                         // 老化
+                  type = 3;
+                } else
+                if (ID.indexOf('T') > -1 || ID.indexOf('C') > -1) { // 其他
+                  type = 5;
+                }
+                
+                //console.log(d.getFullYear() + '/'+ (d.getMonth()+1)  + '/' + d.getDate()  + ' \n' +
+                //            d.getHours() + ':' + d.getMinutes() + ':' + d.getSeconds()  +  ' hihi ' + this.id);
+                window.open('http://221.4.141.146/daily/' + d.getFullYear() + '/' +
+                            (d.getMonth()+1) + '/' + type + '/' + d.getDate() + '/' + ID,
+                            '機台狀態', 'width=600;height=600,scrollbar=yes');
+            }
+
+            // 接收到 PING 資料 --------START
             socket.on('PING', function(msg) {
               console.log('get PING!');
               // 0. reset num
@@ -37,7 +65,10 @@
               console.log('total count: '+ allMachine.length);
 
               // 3. setup color
-              for (var idx = 0; idx < allMachine.length; idx++) {
+              for (var idx = 0, x = allMachine.length; idx < x; idx++) {
+                allMachine[idx].removeEventListener('click', showPopup);
+                allMachine[idx].addEventListener('click', showPopup);
+
                 // special for G111_2, G111_3
                 if (allMachine[idx].id === 'G111_2' || allMachine[idx].id === 'G111_3') {
                   allMachine[idx].style.fill = '#cccccc';
@@ -97,7 +128,7 @@
                                         '<th>機器狀態</th>' + 
                                         '<th>監控上線狀態(1:線上)</th>' + 
                                         '<th>今日良品數</th></tr>');
-              for (var idx = 0; idx < totalData.length; idx++) {
+              for (var idx = 0, x = totalData.length; idx < x; idx++) {
                 $('#data table').append('<tr><td width="10%">' + totalData[idx].ID   + '</td>' +
                                             '<td width="10%">' + totalData[idx].TYPE + '</td>' +
                                             '<td width="10%">' + totalData[idx].IP   + '</td>' +
@@ -107,27 +138,43 @@
                                             '<td width="10%">' + totalData[idx].QTY + '</td></tr>');
               }
             });
+            // 接收到 PING 資料 --------END
 
+            // 計算各機種的稼動率 --------START
+            /*
+            $('#SELECT_E option').remove();
+            $('#SELECT_G option').remove();
+            $('#SELECT_A option').remove();
+            $('#SELECT_TC option').remove();
+            */
             function count(ID, isGood) {
               if (ID.indexOf('E') > -1) {                         // 加締
                 totalE++;
                 if (Boolean(isGood)) { goodE++; } else { notGoodE++; }
                 rateE = new Number(goodE / totalE * 100);
+
+                //$('#SELECT_E').append($('<option></option>').attr('value', ID).text(ID));
               } else
               if (ID.indexOf('G') > -1) {                         // 組立
                 totalG++;
                 if (Boolean(isGood)) { goodG++; } else { notGoodG++; }
                 rateG = new Number(goodG / totalG * 100);
+
+                //$('#SELECT_G').append($('<option></option>').attr('value', ID).text(ID));
               } else
               if (ID.indexOf('A') > -1) {                         // 老化
                 totalA++;
                 if (Boolean(isGood)) { goodA++; } else { notGoodA++; }
                 rateA = new Number(goodA / totalA * 100);
+
+                //$('#SELECT_A').append($('<option></option>').attr('value', ID).text(ID));
               } else
               if (ID.indexOf('T') > -1 || ID.indexOf('C') > -1) { // 其他
                 totalTC++;
                 if (Boolean(isGood)) { goodTC++; } else { notGoodTC++; }
                 rateTC = new Number(goodTC / totalTC * 100);
+
+                //$('#SELECT_TC').append($('<option></option>').attr('value', ID).text(ID));
               }
               $('#E_TOTAL').html(totalE);
               $('#E_GOOD').html(goodE);
@@ -147,8 +194,10 @@
               $('#TC_RATE').html(rateTC.toFixed(2) + '%');
             }
 
+            // 計算各機種的稼動率 --------END
+
+            // 收到數量統計 SUM 資料 --------START
             socket.on('SUM', function(msg) {
-              var data = jQuery.parseJSON(msg);
               var data = jQuery.parseJSON(msg);
               $('#BIG_E').html(data.BIG_E);
               $('#BIG_G').html(data.BIG_G);
@@ -170,64 +219,69 @@
 
               updateDate();
             });
+            // 收到數量統計 SUM 資料 --------END
 
+            // 各機台的表單資料轉換成 csv 檔下載 --------START
             function getCSVfile() {
-                var fileName = "report";
+              var fileName = "report";
                 
-                //var array  = typeof tatalData != 'object' ? JSON.parse(tatalData) : tatalData;
-                //var array  = tatalData;
-                var str = 'ID,TYPE,IP,NOTE,STATUS,ALIVE,QTY\r\n';
+              //var array  = typeof tatalData != 'object' ? JSON.parse(tatalData) : tatalData;
+              //var array  = tatalData;
+              var str = 'ID,TYPE,IP,NOTE,STATUS,ALIVE,QTY\r\n';
+               
+              for(var x = 0, y = totalData.length; x < y; x++) {
+                  var line = '';
+                  for(var index in totalData[x]) {
+                      if(line != '') line += ',';
+                      line += totalData[x][index];
+                  }
+                  str += line + '\r\n';
+              }
                 
-                for(var x = 0; x < totalData.length; x++) {
-                    var line = '';
-                    for(var index in totalData[x]) {
-                        if(line != '') line += ',';
-                        line += totalData[x][index];
-                    }
-                    str += line + '\r\n';
-                }
+              var uri = 'data:text/csv;charset=utf-8,' + escape(str);
                 
-                var uri = 'data:text/csv;charset=utf-8,' + escape(str);
+              var link = document.createElement("a");    
+              link.href = uri;
+              link.style = "visibility:hidden";
+              link.download = fileName + ".csv";
+               
+              document.body.appendChild(link);
+              link.click();
+              document.body.removeChild(link);
                 
-                var link = document.createElement("a");    
-                link.href = uri;
-                link.style = "visibility:hidden";
-                link.download = fileName + ".csv";
-                
-                document.body.appendChild(link);
-                link.click();
-                document.body.removeChild(link);
-                
-                //if (navigator.appName != 'Microsoft Internet Explorer') {
-                //    window.open('data:text/csv;charset=utf-8,' + escape(str));
-                //} else {
-                //    var popup = window.open('','csv','');
-                //    popup.document.body.innerHTML = '<pre>' + str + '</pre>';
-                //}    
+              //if (navigator.appName != 'Microsoft Internet Explorer') {
+              //    window.open('data:text/csv;charset=utf-8,' + escape(str));
+              //} else {
+              //    var popup = window.open('','csv','');
+              //    popup.document.body.innerHTML = '<pre>' + str + '</pre>';
+              //}    
             }
+            // 各機台的表單資料轉換成 csv 檔下載 --------END
 
+            // 更新數據更新日期 --------START
             Number.prototype.padLeft = function(base,chr){
-                var  len = (String(base || 10).length - String(this).length)+1;
-                return len > 0? new Array(len).join(chr || '0')+this : this;
+              var  len = (String(base || 10).length - String(this).length)+1;
+              return len > 0? new Array(len).join(chr || '0')+this : this;
             }
-
             function updateDate() {
-                var d = new Date,
-                    dformat = [ d.getFullYear(),
-                               (d.getMonth()+1).padLeft(),
-                                d.getDate().padLeft()].join('/')+
-                                ' ' +
-                              [ d.getHours().padLeft(),
-                                d.getMinutes().padLeft(),
-                                d.getSeconds().padLeft()].join(':');
-                $('#nowTime').html(dformat);
-                $('#nowTime_2').html(dformat);
+              var d = new Date,
+                  dformat = [ d.getFullYear(),
+                             (d.getMonth()+1).padLeft(),
+                              d.getDate().padLeft()].join('/')+
+                              ' ' +
+                            [ d.getHours().padLeft(),
+                              d.getMinutes().padLeft(),
+                              d.getSeconds().padLeft()].join(':');
+              $('#nowTime').html(dformat);
+              $('#nowTime_2').html(dformat);
             }
+            // 更新數據更新日期 --------END
 
+            // 當 svg 圖檔載入完成會呼叫這一段告知伺服器
             function loadMapOK() {
-                var factoryMap = document.getElementById("factory_map");
-                mapDoc = factoryMap.contentDocument;
-                socket.emit('boxStatusPic','loadFinish');
+              var factoryMap = document.getElementById("factory_map");
+              mapDoc = factoryMap.contentDocument;
+              socket.emit('boxStatusPic','loadFinish');
             }
         </script>
     </head>
@@ -316,7 +370,7 @@
                         <td id="A_RATE"></td>
                     </tr>
                     <tr>
-                        <td>其他(選別，加工，切角)</td>
+                        <td>其他(選別，加工切角)</td>
                         <td><object data="/pentagon.svg" type="image/svg+xml" width="30%" height="30%"></object></td>
                         <td id="TC_TOTAL"></td>
                         <td id="TC_GOOD" colspan="2"></td>
@@ -364,6 +418,25 @@
                 </tbody>
             </table>
         </div>
+        <!--
+        <div align="center">
+            加締
+            <select id="SELECT_E"></select>
+            <button type="button">顯示狀態</button> 
+            &nbsp;&nbsp;|&nbsp;&nbsp;
+            組立
+            <select id="SELECT_G"></select>
+            <button type="button">顯示狀態</button> 
+            &nbsp;&nbsp;|&nbsp;&nbsp;
+            老化
+            <select id="SELECT_A"></select>
+            <button type="button">顯示狀態</button> 
+            &nbsp;&nbsp;|&nbsp;&nbsp;
+            其他(選別，加工切角)
+            <select id="SELECT_TC"></select>
+            <button type="button">顯示狀態</button> 
+        </div>
+        -->
         <!-- 分隔線分隔線分隔線分隔線分隔線分隔線分隔線分隔線分隔線分隔線分隔線分隔線分隔線分隔線分隔線分隔線分隔線分隔線分隔線分隔線 -->
         <br />
         <object onload="loadMapOK();" data="/optimized_2.svg" type="image/svg+xml" id="factory_map" width="100%" height="100%"></object>

@@ -15,6 +15,7 @@ exports.getQty = function (callback) {
 
     var result = [];
     var stream = collection.find({'insertDate':moment().format('YYYY-MM-DD')}).stream();
+    console.log('dbQTY - TIME: ' + moment().format('YYYY-MM-DD'));
     stream.on("data", function(doc) {
       //console.log(doc.machineID + "::" + doc.count_qty);
       var item = {};
