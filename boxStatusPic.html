@@ -85,35 +85,41 @@
                     ', ALIVE: '  + data[0].ALIVE +
                     ', QTY: '    + data[0].QTY);
 */
-                  if (data[0].ALIVE == 1) { // Pi is alive!
-                    if (data[0].STATUS === '01') {
-                      if (data[0].QTY == 0) { // working, but qty = 0
+                  if (data[0].ALIVE == 1) {              // Pi is alive!
+
+                    if (data[0].STATUS === '01') {       // status 01 (running)
+                      if (data[0].QTY == 0) {            // working, but qty = 0
                         allMachine[idx].style.fill = '#006600';
                         //console.log(data[0].ID);
                         count(data[0].ID, 0);
-                      } else {                // working with good qty!
+                      } else {                           // working with good qty!
                         allMachine[idx].style.fill = '#00ff00';
                         count(data[0].ID, 1);
                       }
                     } else 
-                    if (data[0].STATUS === '05') { // idle
+                    if (data[0].STATUS === '05') {       // status 05 (idle)
                       allMachine[idx].style.fill = '#ffff00';
                       count(data[0].ID, 1);
-                    } else 
-                    if (data[0].STATUS === '10' || data[0].STATUS === '') { // standby
+                    } else                               // standby
+                    if (data[0].STATUS === '10' || data[0].STATUS === '') { 
                       allMachine[idx].style.fill = '#ff0000';
                       count(data[0].ID, 0);
-                    } else {
+                    } else                               // status 09 with no qty!
+                    if (data[0].STATUS === '09' && data[0].QTY == 0) {
+                      allMachine[idx].style.fill = '#ff0000';
+                      count(data[0].ID, 0);
+                    } else {                             // others, no special situation.
                       allMachine[idx].style.fill = '#00ff00';
                       count(data[0].ID, 1);
                     }
-                  } else
-                  if(data[0].ALIVE == 0 && data[0].NOTE === '') { // fucking dead Pi
+
+                  } else                                 // fucking dead Pi
+                  if(data[0].ALIVE == 0 && data[0].NOTE === '') { 
                     allMachine[idx].style.fill = '#0000ff';
                     count(data[0].ID, 0);
                   }
 
-                  if (data[0].NOTE !== '') { // not install Pi
+                  if (data[0].NOTE !== '') {             // not install Pi
                     allMachine[idx].style.fill = '#cccccc';
                   }
                 }
