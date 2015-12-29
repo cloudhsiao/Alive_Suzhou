@@ -5,7 +5,7 @@
   "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/ZH8000/Alive.git"
+    "url": "https://github.com/ZH8000/Alive_Suzhou.git"
   },
   "dependencies": {
     "emailjs": "^0.3.16",
