@@ -1,2713 +1,1478 @@
-[{
-    "ID":"E01",
-    "TYPE":"TSW-100T",
-    "IP":"192.168.10.1",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G01",
-    "TYPE":"FTO-2200A",
-    "IP":"192.168.10.2",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E03",
-    "TYPE":"TSW-100T",
-    "IP":"192.168.10.3",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G03",
-    "TYPE":"FTO-2200",
-    "IP":"192.168.10.4",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E04",
-    "TYPE":"HSW-800",
-    "IP":"192.168.10.5",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G04",
-    "TYPE":"FTO-2200A",
-    "IP":"192.168.10.6",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E05",
-    "TYPE":"TSW-100T",
-    "IP":"192.168.10.7",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G05",
-    "TYPE":"FTO-2200A",
-    "IP":"192.168.10.8",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E06",
-    "TYPE":"TSW-100T",
-    "IP":"192.168.10.9",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G06",
-    "TYPE":"FTO-2200A",
-    "IP":"192.168.10.10",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E07",
-    "TYPE":"TSW-100T",
-    "IP":"192.168.10.11",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G07",
-    "TYPE":"FTO-2200A",
-    "IP":"192.168.10.12",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E08",
-    "TYPE":"HSW-800",
-    "IP":"192.168.10.13",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G08",
-    "TYPE":"FTO-2400",
-    "IP":"192.168.10.14",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E09",
-    "TYPE":"TSW-100T",
-    "IP":"192.168.10.15",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G09",
-    "TYPE":"FTO-2200A",
-    "IP":"192.168.10.16",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E10",
-    "TYPE":"TSW-880B",
-    "IP":"192.168.10.17",
-    "NOTE":"未安裝",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G10",
-    "TYPE":"FTO-2200A",
-    "IP":"192.168.10.18",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E11",
-    "TYPE":"TSW-168T",
-    "IP":"192.168.10.19",
-    "NOTE":"未安裝",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E12",
-    "TYPE":"HSW-800",
-    "IP":"192.168.10.20",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G12",
-    "TYPE":"FTO-2400",
-    "IP":"192.168.10.21",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E13",
-    "TYPE":"HSW-800",
-    "IP":"192.168.10.22",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G13",
-    "TYPE":"FTO-2500",
-    "IP":"192.168.10.23",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E15",
-    "TYPE":"TSW-100T",
-    "IP":"192.168.10.24",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G15",
-    "TYPE":"FTO-2200A",
-    "IP":"192.168.10.25",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E16",
-    "TYPE":"TSW-100T",
-    "IP":"192.168.10.26",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G16",
-    "TYPE":"FTO-2200A",
-    "IP":"192.168.10.27",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E17",
-    "TYPE":"HSW-800",
-    "IP":"192.168.10.28",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G17",
-    "TYPE":"FTO-2500",
-    "IP":"192.168.10.29",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E18",
-    "TYPE":"HSW-160A",
-    "IP":"192.168.10.30",
-    "NOTE":"未安裝",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G18",
-    "TYPE":"FTO-3100",
-    "IP":"192.168.10.31",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E37",
-    "TYPE":"TSW-100T",
-    "IP":"192.168.10.32",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G37",
-    "TYPE":"FTO-2200A",
-    "IP":"192.168.10.33",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E38",
-    "TYPE":"TSW-100T",
-    "IP":"192.168.10.34",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G38",
-    "TYPE":"FTO-2200A",
-    "IP":"192.168.10.35",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E39",
-    "TYPE":"TSW-100T",
-    "IP":"192.168.10.36",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G39",
-    "TYPE":"FTO-2400",
-    "IP":"192.168.10.37",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E40",
-    "TYPE":"HSW-800",
-    "IP":"192.168.10.38",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G40",
-    "TYPE":"FTO-2400",
-    "IP":"192.168.10.39",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E41",
-    "TYPE":"TSW-100T",
-    "IP":"192.168.10.40",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G41",
-    "TYPE":"FTO-2200A",
-    "IP":"192.168.10.41",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E42",
-    "TYPE":"HSW-800",
-    "IP":"192.168.10.42",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G42",
-    "TYPE":"FTO-2200A",
-    "IP":"192.168.10.43",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E43",
-    "TYPE":"TSW-100T",
-    "IP":"192.168.10.44",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G43",
-    "TYPE":"FTO-2200A",
-    "IP":"192.168.10.45",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E44",
-    "TYPE":"TSW-100T",
-    "IP":"192.168.10.46",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G44",
-    "TYPE":"FTO-2200A",
-    "IP":"192.168.10.47",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E45",
-    "TYPE":"TSW-168T",
-    "IP":"192.168.10.48",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G45",
-    "TYPE":"FTO-2200A",
-    "IP":"192.168.10.49",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G46",
-    "TYPE":"FTO-2200A",
-    "IP":"192.168.10.50",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E47",
-    "TYPE":"HSW-250",
-    "IP":"192.168.10.51",
-    "NOTE":"未安裝",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G47",
-    "TYPE":"FTO-2200A",
-    "IP":"192.168.10.52",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E49-K1",
-    "TYPE":"KAIDO",
-    "IP":"192.168.10.53",
-    "NOTE":"未安裝",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E49-K2",
-    "TYPE":"KAIDO",
-    "IP":"192.168.10.54",
-    "NOTE":"未安裝",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E49-S1",
-    "TYPE":"SPH-3000",
-    "IP":"192.168.10.55",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G49",
-    "TYPE":"SBB-1800(組立)",
-    "IP":"192.168.10.56",
-    "NOTE":"未安裝",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G49",
-    "TYPE":"SBB-1800(仕上)",
-    "IP":"192.168.10.57",
-    "NOTE":"未安裝",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E50",
-    "TYPE":"HSW-800",
-    "IP":"192.168.10.58",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G50",
-    "TYPE":"TIA-2600",
-    "IP":"192.168.10.59",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E51",
-    "TYPE":"TSW-100T",
-    "IP":"192.168.10.60",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G51",
-    "TYPE":"TIA-2600",
-    "IP":"192.168.10.61",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E52",
-    "TYPE":"TSW-168",
-    "IP":"192.168.10.62",
-    "NOTE":"機台封裝",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G52",
-    "TYPE":"SBB-1800",
-    "IP":"192.168.10.63",
-    "NOTE":"未安裝",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G52",
-    "TYPE":"SBB-1800",
-    "IP":"192.168.10.64",
-    "NOTE":"未安裝",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E53",
-    "TYPE":"TSW-168T",
-    "IP":"192.168.10.65",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G53",
-    "TYPE":"TIA-2600",
-    "IP":"192.168.10.66",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E72",
-    "TYPE":"TSW-168T",
-    "IP":"192.168.10.67",
-    "NOTE":"機台封裝",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G72",
-    "TYPE":"TIA-2600",
-    "IP":"192.168.10.68",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E99",
-    "TYPE":"TSW-100T",
-    "IP":"192.168.10.69",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G99",
-    "TYPE":"FTO-2200A",
-    "IP":"192.168.10.186",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E73",
-    "TYPE":"HSW-500",
-    "IP":"192.168.10.71",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G73",
-    "TYPE":"FTO-3010",
-    "IP":"192.168.10.72",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E74",
-    "TYPE":"HSW-800",
-    "IP":"192.168.10.73",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G74",
-    "TYPE":"FTO-2500",
-    "IP":"192.168.10.74",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E75",
-    "TYPE":"TSW-100T",
-    "IP":"192.168.10.75",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G75",
-    "TYPE":"FTO-2400",
-    "IP":"192.168.10.76",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E76",
-    "TYPE":"HSW-800",
-    "IP":"192.168.10.77",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G76",
-    "TYPE":"FTO-2500",
-    "IP":"192.168.10.78",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E77",
-    "TYPE":"HSW-800",
-    "IP":"192.168.10.79",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G77",
-    "TYPE":"FTO-2500",
-    "IP":"192.168.10.80",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E78",
-    "TYPE":"TSW-100T",
-    "IP":"192.168.10.81",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G78",
-    "TYPE":"FTO-2200A",
-    "IP":"192.168.10.82",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E79",
-    "TYPE":"HSW-800",
-    "IP":"192.168.10.83",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G79",
-    "TYPE":"FTO-2200A",
-    "IP":"192.168.10.84",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E80",
-    "TYPE":"HSW-800",
-    "IP":"192.168.10.85",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G80",
-    "TYPE":"FTO-2500",
-    "IP":"192.168.10.86",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E81",
-    "TYPE":"TSW-100T",
-    "IP":"192.168.10.87",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G81",
-    "TYPE":"FTO-3010",
-    "IP":"192.168.10.88",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E82",
-    "TYPE":"TSW-100T",
-    "IP":"192.168.10.89",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G82",
-    "TYPE":"FTO-3000",
-    "IP":"192.168.10.90",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E83",
-    "TYPE":"TSW-100T",
-    "IP":"192.168.10.91",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G83",
-    "TYPE":"TIA-2600",
-    "IP":"192.168.10.92",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E84",
-    "TYPE":"HSW-880B",
-    "IP":"192.168.10.93",
-    "NOTE":"未安裝",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G84",
-    "TYPE":"FTO-3010",
-    "IP":"192.168.10.94",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E85",
-    "TYPE":"TSW-100T",
-    "IP":"192.168.10.95",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G85",
-    "TYPE":"FTO-2500",
-    "IP":"192.168.10.96",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E86",
-    "TYPE":"HSW-100T",
-    "IP":"192.168.10.97",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G86",
-    "TYPE":"FTO-2500",
-    "IP":"192.168.10.98",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E87",
-    "TYPE":"HSW-160B",
-    "IP":"192.168.10.99",
-    "NOTE":"未安裝",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E88",
-    "TYPE":"HSW-160B",
-    "IP":"192.168.10.100",
-    "NOTE":"未安裝",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E90",
-    "TYPE":"HSW-250",
-    "IP":"192.168.10.101",
-    "NOTE":"未安裝",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E91",
-    "TYPE":"TSW-100T",
-    "IP":"192.168.10.102",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G91",
-    "TYPE":"TIA-2600",
-    "IP":"192.168.10.103",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E110",
-    "TYPE":"TSW-100T",
-    "IP":"192.168.10.104",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G93",
-    "TYPE":"FTO-2200A",
-    "IP":"192.168.10.105",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G94",
-    "TYPE":"FTO-3100",
-    "IP":"192.168.10.106",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G95",
-    "TYPE":"FTO-3100",
-    "IP":"192.168.10.107",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G97",
-    "TYPE":"FTO-3100",
-    "IP":"192.168.10.108",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E19",
-    "TYPE":"TSW-100T",
-    "IP":"192.168.10.109",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G19",
-    "TYPE":"FTO-2700",
-    "IP":"192.168.10.110",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E20",
-    "TYPE":"HSW-160A",
-    "IP":"192.168.10.111",
-    "NOTE":"未安裝",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G20",
-    "TYPE":"FTO-2700",
-    "IP":"192.168.10.112",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E21",
-    "TYPE":"TSW-100T",
-    "IP":"192.168.10.113",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G21",
-    "TYPE":"FTO-2200A",
-    "IP":"192.168.10.114",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E22",
-    "TYPE":"HSW-800",
-    "IP":"192.168.10.115",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G22",
-    "TYPE":"FTO-2200",
-    "IP":"192.168.10.116",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E23",
-    "TYPE":"TSW-100T",
-    "IP":"192.168.10.117",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G23",
-    "TYPE":"FTO-2400",
-    "IP":"192.168.10.118",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E24",
-    "TYPE":"TSW-100T",
-    "IP":"192.168.10.119",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G24",
-    "TYPE":"FTO-2200",
-    "IP":"192.168.10.120",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E25",
-    "TYPE":"TSW-100T",
-    "IP":"192.168.10.121",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G25",
-    "TYPE":"FTO-2200",
-    "IP":"192.168.10.122",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E26",
-    "TYPE":"HSW-500",
-    "IP":"192.168.10.123",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G26",
-    "TYPE":"FTO-2200A",
-    "IP":"192.168.10.124",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E27",
-    "TYPE":"HSW-800",
-    "IP":"192.168.10.125",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G27",
-    "TYPE":"FTO-2400",
-    "IP":"192.168.10.126",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E28",
-    "TYPE":"HSW-100T",
-    "IP":"192.168.10.127",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G28",
-    "TYPE":"FTO-2700",
-    "IP":"192.168.10.128",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E29",
-    "TYPE":"TSW-100T",
-    "IP":"192.168.10.129",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G29",
-    "TYPE":"FTO-2600",
-    "IP":"192.168.10.130",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E30",
-    "TYPE":"TSW-100T",
-    "IP":"192.168.10.131",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G30",
-    "TYPE":"FTO-2200A",
-    "IP":"192.168.10.132",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E31",
-    "TYPE":"TSW-100T",
-    "IP":"192.168.10.133",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G31",
-    "TYPE":"FTO-2400",
-    "IP":"192.168.10.134",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E32",
-    "TYPE":"TSW-100T",
-    "IP":"192.168.10.135",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G32",
-    "TYPE":"FTO-2500",
-    "IP":"192.168.10.136",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E33",
-    "TYPE":"TSW-100T",
-    "IP":"192.168.10.137",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G33",
-    "TYPE":"FTO-2200A",
-    "IP":"192.168.10.138",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E34",
-    "TYPE":"TSW-100T",
-    "IP":"192.168.10.139",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G34",
-    "TYPE":"FTO-2200A",
-    "IP":"192.168.10.140",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E35",
-    "TYPE":"TSW-100T",
-    "IP":"192.168.10.141",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G35",
-    "TYPE":"FTO-2200A",
-    "IP":"192.168.10.142",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E36",
-    "TYPE":"TSW-100T",
-    "IP":"192.168.10.143",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G36",
-    "TYPE":"FTO-2200A",
-    "IP":"192.168.10.144",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E54",
-    "TYPE":"HSW-800",
-    "IP":"192.168.10.145",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G54",
-    "TYPE":"FTO-2400",
-    "IP":"192.168.10.146",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E55",
-    "TYPE":"HSW-800",
-    "IP":"192.168.10.147",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G55",
-    "TYPE":"FTO-2500",
-    "IP":"192.168.10.148",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E56",
-    "TYPE":"HSW-800",
-    "IP":"192.168.10.149",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G56",
-    "TYPE":"FTO-2400",
-    "IP":"192.168.10.150",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E57",
-    "TYPE":"TSW-100T",
-    "IP":"192.168.10.151",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G57",
-    "TYPE":"FTO-2500",
-    "IP":"192.168.10.152",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E58",
-    "TYPE":"TSW-100T",
-    "IP":"192.168.10.153",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G58",
-    "TYPE":"TIA-2600",
-    "IP":"192.168.10.154",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E59",
-    "TYPE":"TSW-100T",
-    "IP":"192.168.10.155",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G59",
-    "TYPE":"FTO-2500",
-    "IP":"192.168.10.156",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E60",
-    "TYPE":"TSW-100T",
-    "IP":"192.168.10.157",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G60",
-    "TYPE":"FTO-2400",
-    "IP":"192.168.10.158",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E61",
-    "TYPE":"HSW-800",
-    "IP":"192.168.10.159",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G61",
-    "TYPE":"FTO-2400",
-    "IP":"192.168.10.160",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E62",
-    "TYPE":"TSW-168T",
-    "IP":"192.168.10.161",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G62",
-    "TYPE":"TIA-2600",
-    "IP":"192.168.10.162",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E63",
-    "TYPE":"TSW-100T",
-    "IP":"192.168.10.163",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G63",
-    "TYPE":"FTO-2200A",
-    "IP":"192.168.10.164",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E64",
-    "TYPE":"HSW-100T",
-    "IP":"192.168.10.165",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G64",
-    "TYPE":"FTO-2500",
-    "IP":"192.168.10.166",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E65",
-    "TYPE":"TSW-800",
-    "IP":"192.168.10.167",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G65",
-    "TYPE":"FTO-2200A",
-    "IP":"192.168.10.168",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E66",
-    "TYPE":"HSW-800",
-    "IP":"192.168.10.169",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G66",
-    "TYPE":"FTO-2400",
-    "IP":"192.168.10.170",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E67",
-    "TYPE":"HSW-168",
-    "IP":"192.168.10.171",
-    "NOTE":"未安裝",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G67",
-    "TYPE":"FTO-2510",
-    "IP":"192.168.10.172",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E68",
-    "TYPE":"HSW-800",
-    "IP":"192.168.10.173",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G68",
-    "TYPE":"FTO-2500",
-    "IP":"192.168.10.174",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E69",
-    "TYPE":"HSW-800",
-    "IP":"192.168.10.175",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G69",
-    "TYPE":"FTO-2500",
-    "IP":"192.168.10.176",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E70",
-    "TYPE":"TSW-100T",
-    "IP":"192.168.10.177",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G70",
-    "TYPE":"FTO-2200A",
-    "IP":"192.168.10.178",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E71",
-    "TYPE":"HSW-800",
-    "IP":"192.168.10.179",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G71",
-    "TYPE":"FTO-2500",
-    "IP":"192.168.10.180",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E92",
-    "TYPE":"TSW-100T",
-    "IP":"192.168.10.181",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G92",
-    "TYPE":"TIA-2600",
-    "IP":"192.168.10.182",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G96",
-    "TYPE":"FTO-3100",
-    "IP":"192.168.10.183",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G110",
-    "TYPE":"TIA-2600",
-    "IP":"192.168.10.184",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G98",
-    "TYPE":"FTO-3100",
-    "IP":"192.168.10.185",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G99",
-    "TYPE":"FTO-2200A",
-    "IP":"192.168.10.186",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G100",
-    "TYPE":"FTO-2200A",
-    "IP":"192.168.10.187",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E101",
-    "TYPE":"ARCO",
-    "IP":"192.168.10.188",
-    "NOTE":"未安裝",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E102",
-    "TYPE":"ARCO",
-    "IP":"192.168.10.189",
-    "NOTE":"未安裝",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G103",
-    "TYPE":"SBB-1800(組立)",
-    "IP":"192.168.10.190",
-    "NOTE":"未安裝",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G103",
-    "TYPE":"SBB-1800(仕上)",
-    "IP":"192.168.10.191",
-    "NOTE":"未安裝",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G104",
-    "TYPE":"FTO-2700",
-    "IP":"192.168.10.192",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G105",
-    "TYPE":"FTO-3100",
-    "IP":"192.168.10.193",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G106",
-    "TYPE":"SAA-1800(組立)",
-    "IP":"192.168.10.194",
-    "NOTE":"未安裝",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G106",
-    "TYPE":"SSB-1800(仕上)",
-    "IP":"192.168.10.195",
-    "NOTE":"未安裝",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E106",
-    "TYPE":"HSW-800",
-    "IP":"192.168.10.196",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E107",
-    "TYPE":"HSW-160B",
-    "IP":"192.168.10.197",
-    "NOTE":"未安裝",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E108",
-    "TYPE":"HSW-250",
-    "IP":"192.168.10.198",
-    "NOTE":"未安裝",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E100",
-    "TYPE":"TSW-100T",
-    "IP":"192.168.10.199",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E111",
-    "TYPE":"HSW-160A",
-    "IP":"192.168.10.200",
-    "NOTE":"未安裝",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E112",
-    "TYPE":"HSW-160B",
-    "IP":"192.168.10.201",
-    "NOTE":"未安裝",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E104",
-    "TYPE":"HSW-168",
-    "IP":"192.168.10.202",
-    "NOTE":"未安裝",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E49-S2",
-    "TYPE":"SPH-3000",
-    "IP":"192.168.10.203",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E49-S3",
-    "TYPE":"SPH-3000",
-    "IP":"192.168.10.204",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E49-S4",
-    "TYPE":"SPH-3000",
-    "IP":"192.168.10.205",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E49-S5",
-    "TYPE":"SPH-3000",
-    "IP":"192.168.10.206",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G107",
-    "TYPE":"FT03050",
-    "IP":"192.168.10.207",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G108",
-    "TYPE":"FT03050",
-    "IP":"192.168.10.208",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G109",
-    "TYPE":"FT03050",
-    "IP":"192.168.10.209",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E49-S6",
-    "TYPE":"SPH-3000",
-    "IP":"192.168.10.210",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E49-S7",
-    "TYPE":"SPH-3000",
-    "IP":"192.168.10.211",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E49-S8",
-    "TYPE":"SPH-3000",
-    "IP":"192.168.10.212",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E114",
-    "TYPE":"TSW-168T",
-    "IP":"192.168.10.213",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E115",
-    "TYPE":"TSW-168T",
-    "IP":"192.168.10.214",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E116",
-    "TYPE":"TSW-168T",
-    "IP":"192.168.10.215",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E113",
-    "TYPE":"TSW-168T",
-    "IP":"192.168.10.216",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E117",
-    "TYPE":"TSW-168T",
-    "IP":"192.168.10.217",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E118",
-    "TYPE":"TSW-303",
-    "IP":"192.168.10.218",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E119",
-    "TYPE":"TSW-303",
-    "IP":"192.168.10.219",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E120",
-    "TYPE":"TSW-303",
-    "IP":"192.168.10.220",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E121",
-    "TYPE":"TSW-303",
-    "IP":"192.168.10.221",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E122",
-    "TYPE":"TSW-303",
-    "IP":"192.168.10.222",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"E123",
-    "TYPE":"TSW-304",
-    "IP":"192.168.10.223",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G111",
-    "TYPE":"富信成",
-    "IP":"192.168.10.224",
-    "NOTE":"未安裝",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G111",
-    "TYPE":"富信成",
-    "IP":"192.168.10.225",
-    "NOTE":"未安裝",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G112",
-    "TYPE":"FT03050",
-    "IP":"192.168.20.82",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G113",
-    "TYPE":"FT03050",
-    "IP":"192.168.20.83",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G114",
-    "TYPE":"FT03050",
-    "IP":"192.168.20.84",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G115",
-    "TYPE":"FT03050",
-    "IP":"192.168.20.85",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G116",
-    "TYPE":"FT03050",
-    "IP":"192.168.20.86",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G117",
-    "TYPE":"FT03050",
-    "IP":"192.168.20.87",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"G118",
-    "TYPE":"FT03050",
-    "IP":"192.168.20.88",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"A01",
-    "TYPE":"CS-204K",
-    "IP":"192.168.10.227",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"A02",
-    "TYPE":"CS-206",
-    "IP":"192.168.10.228",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"A03",
-    "TYPE":"CS-205",
-    "IP":"192.168.10.229",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"A04",
-    "TYPE":"CS-205",
-    "IP":"192.168.10.230",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"A05",
-    "TYPE":"CS-205",
-    "IP":"192.168.10.231",
-    "NOTE":"修機中",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"A06",
-    "TYPE":"CS-210",
-    "IP":"192.168.10.232",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"A07",
-    "TYPE":"ATS-630J",
-    "IP":"192.168.10.233",
-    "NOTE":"無法開機",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"A08",
-    "TYPE":"CS-210",
-    "IP":"192.168.10.234",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"A09",
-    "TYPE":"CS-206K",
-    "IP":"192.168.10.235",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"A10",
-    "TYPE":"CS-204K",
-    "IP":"192.168.10.236",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"A11",
-    "TYPE":"CS-205",
-    "IP":"192.168.10.237",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"A12",
-    "TYPE":"CS-210",
-    "IP":"192.168.10.238",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"A13",
-    "TYPE":"CS-210",
-    "IP":"192.168.10.239",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"A14",
-    "TYPE":"CS-210",
-    "IP":"192.168.10.240",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"A15",
-    "TYPE":"ATS-720",
-    "IP":"192.168.10.241",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"A16",
-    "TYPE":"ATS-720",
-    "IP":"192.168.10.242",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"A17",
-    "TYPE":"CS-205",
-    "IP":"192.168.10.243",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"A18",
-    "TYPE":"CS-206",
-    "IP":"192.168.10.244",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"A19",
-    "TYPE":"CS-210",
-    "IP":"192.168.10.245",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"A20",
-    "TYPE":"CS-210",
-    "IP":"192.168.10.246",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"A21",
-    "TYPE":"CS-210",
-    "IP":"192.168.10.247",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"A22",
-    "TYPE":"CS-210",
-    "IP":"192.168.10.248",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"A23",
-    "TYPE":"ATS-720",
-    "IP":"192.168.10.249",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"A24",
-    "TYPE":"CS-206",
-    "IP":"192.168.10.250",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"A25",
-    "TYPE":"CS-206",
-    "IP":"192.168.10.251",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"A26",
-    "TYPE":"CS-206",
-    "IP":"192.168.10.252",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"A27",
-    "TYPE":"CS-223",
-    "IP":"192.168.20.77",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"A28",
-    "TYPE":"CS-210",
-    "IP":"192.168.20.1",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"A29",
-    "TYPE":"CS-231",
-    "IP":"192.168.20.2",
-    "NOTE":"備料機台",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"A30",
-    "TYPE":"ATS-720",
-    "IP":"192.168.20.3",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"A31",
-    "TYPE":"CS-210",
-    "IP":"192.168.20.4",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"A32",
-    "TYPE":"CS-210",
-    "IP":"192.168.20.5",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"A33",
-    "TYPE":"ATS-100M",
-    "IP":"192.168.20.6",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"A34",
-    "TYPE":"ATS-900",
-    "IP":"192.168.20.7",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"A35",
-    "TYPE":"ATS-600",
-    "IP":"192.168.20.8",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"A36",
-    "TYPE":"ATS-600",
-    "IP":"192.168.20.9",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"A37",
-    "TYPE":"ATS-720",
-    "IP":"192.168.20.10",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"A38",
-    "TYPE":"ATS-720",
-    "IP":"192.168.20.11",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"A39",
-    "TYPE":"ATS-630J",
-    "IP":"192.168.20.12",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"A40",
-    "TYPE":"CAS-3000SA",
-    "IP":"192.168.20.13",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"A41",
-    "TYPE":"CAS-3000SA",
-    "IP":"192.168.20.14",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"A42",
-    "TYPE":"CAS-3000SA",
-    "IP":"192.168.20.15",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"A43",
-    "TYPE":"ATS-110M",
-    "IP":"192.168.20.16",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"A44",
-    "TYPE":"ATS-161H",
-    "IP":"192.168.20.17",
-    "NOTE":"機台封裝",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"A45",
-    "TYPE":"CAS-3000SA",
-    "IP":"192.168.20.18",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"A46",
-    "TYPE":"ATS-600M",
-    "IP":"192.168.20.19",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"A47",
-    "TYPE":"CAS-3000SA",
-    "IP":"192.168.20.20",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"A48",
-    "TYPE":"CAS-4500S",
-    "IP":"192.168.20.21",
-    "NOTE":"未安裝",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"A49",
-    "TYPE":"YC-608",
-    "IP":"192.168.20.22",
-    "NOTE":"未安裝",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"A50",
-    "TYPE":"YC-308",
-    "IP":"192.168.20.23",
-    "NOTE":"未安裝",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"A57",
-    "TYPE":"YC-208",
-    "IP":"192.168.20.24",
-    "NOTE":"未安裝",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"A51",
-    "TYPE":"GT-480P",
-    "IP":"192.168.20.25",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"A58",
-    "TYPE":"GT-480P",
-    "IP":"192.168.20.26",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"A52",
-    "TYPE":"GT-1318P",
-    "IP":"192.168.20.27",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"A53",
-    "TYPE":"GT-1318P",
-    "IP":"192.168.20.28",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"A54",
-    "TYPE":"GT-1318P",
-    "IP":"192.168.20.29",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"A55",
-    "TYPE":"GT-1318P",
-    "IP":"192.168.20.30",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"A56",
-    "TYPE":"GT-1318P",
-    "IP":"192.168.20.31",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"A59",
-    "TYPE":"GT-1318P",
-    "IP":"192.168.20.32",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"A60",
-    "TYPE":"GT-1318P",
-    "IP":"192.168.20.33",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"A61",
-    "TYPE":"GT-1318P",
-    "IP":"192.168.20.34",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"A62",
-    "TYPE":"GT-1318P",
-    "IP":"192.168.20.35",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"A63",
-    "TYPE":"GT-1318P",
-    "IP":"192.168.20.36",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"A64",
-    "TYPE":"GT-1318P",
-    "IP":"192.168.20.37",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"A65",
-    "TYPE":"GT-1318P",
-    "IP":"192.168.20.38",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"A66",
-    "TYPE":"GT-480P",
-    "IP":"192.168.20.39",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"A67",
-    "TYPE":"YC-600B",
-    "IP":"192.168.20.40",
-    "NOTE":"未安裝",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"A68",
-    "TYPE":"ACG-308S-H",
-    "IP":"192.168.20.78",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"A69",
-    "TYPE":"ACG-508F",
-    "IP":"192.168.20.79",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"A70",
-    "TYPE":"ACG-508F",
-    "IP":"192.168.20.80",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"A71",
-    "TYPE":"ACG-508F",
-    "IP":"192.168.20.81",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"T01",
-    "TYPE":"NCR236A",
-    "IP":"192.168.20.41",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"T02",
-    "TYPE":"NCR236A",
-    "IP":"192.168.20.42",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"T03",
-    "TYPE":"NCR236A",
-    "IP":"192.168.20.43",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"T04",
-    "TYPE":"NCR236A",
-    "IP":"192.168.20.44",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"T05",
-    "TYPE":"NCR236A",
-    "IP":"192.168.20.45",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"T06",
-    "TYPE":"NCR236A",
-    "IP":"192.168.20.46",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"T07",
-    "TYPE":"NCR236A",
-    "IP":"192.168.20.47",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"T08",
-    "TYPE":"NCR236A",
-    "IP":"192.168.20.48",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"T09",
-    "TYPE":"NCR-356B",
-    "IP":"192.168.20.49",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"T10",
-    "TYPE":"NCR236A",
-    "IP":"192.168.20.50",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"T11",
-    "TYPE":"NCR236A",
-    "IP":"192.168.20.51",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"T12",
-    "TYPE":"NCR236A",
-    "IP":"192.168.20.52",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"T13",
-    "TYPE":"NCR236A",
-    "IP":"192.168.20.53",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"T16",
-    "TYPE":"NCR236A",
-    "IP":"192.168.20.54",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"T17",
-    "TYPE":"NCR236A",
-    "IP":"192.168.20.55",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"T18",
-    "TYPE":"JET250E",
-    "IP":"192.168.20.56",
-    "NOTE":"不知道機台在哪",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"T19",
-    "TYPE":"JET-250E",
-    "IP":"192.168.20.57",
-    "NOTE":"不知道機台在哪",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"T20",
-    "TYPE":"NCR236A",
-    "IP":"192.168.20.58",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"T21",
-    "TYPE":"NCR356B",
-    "IP":"192.168.20.59",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"T22",
-    "TYPE":"CFT450E",
-    "IP":"192.168.20.60",
-    "NOTE":"未安裝",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"T23",
-    "TYPE":"HTP-300",
-    "IP":"192.168.20.61",
-    "NOTE":"未安裝",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"C01",
-    "TYPE":"富信成",
-    "IP":"192.168.20.62",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"C03",
-    "TYPE":"富信成",
-    "IP":"192.168.20.63",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"C04",
-    "TYPE":"TAICON自製",
-    "IP":"192.168.20.64",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"C05",
-    "TYPE":"TAICON自製",
-    "IP":"192.168.20.65",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"C06",
-    "TYPE":"TAICON自製",
-    "IP":"192.168.20.66",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"C07",
-    "TYPE":"富信成",
-    "IP":"192.168.20.67",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"C08",
-    "TYPE":"富信成",
-    "IP":"192.168.20.68",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"B01",
-    "TYPE":"TAP-306",
-    "IP":"192.168.20.69",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"B02",
-    "TYPE":"TAP-306",
-    "IP":"192.168.20.70",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"B03",
-    "TYPE":"TAP-306",
-    "IP":"192.168.20.71",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"B04",
-    "TYPE":"TAP-306",
-    "IP":"192.168.20.72",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"B05",
-    "TYPE":"TAP-306",
-    "IP":"192.168.20.73",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"B06",
-    "TYPE":"TAP-306",
-    "IP":"192.168.20.74",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"B07",
-    "TYPE":"TAP-306",
-    "IP":"192.168.20.75",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
-  },
-  {
-    "ID":"B08",
-    "TYPE":"TAP-306",
-    "IP":"192.168.20.76",
-    "NOTE":"",
-    "STATUS":"",
-    "ALIVE":0, "QTY": 0
+[
+  {
+    "ID": "A2600-01",
+    "TYPE": "TIA-2600",
+    "IP": "192.168.200.1",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "A2600-02",
+    "TYPE": "TIA-2600",
+    "IP": "192.168.200.2",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "A2600-03",
+    "TYPE": "TIA-2600",
+    "IP": "192.168.200.3",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "A2600-04",
+    "TYPE": "TIA-2600",
+    "IP": "192.168.200.4",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "A2600-06",
+    "TYPE": "TIA-2600",
+    "IP": "192.168.200.5",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "A2600-07",
+    "TYPE": "TIA-2600",
+    "IP": "192.168.200.6",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "A2600-08",
+    "TYPE": "TIA-2600",
+    "IP": "192.168.200.7",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "A2600-09",
+    "TYPE": "TIA-2600",
+    "IP": "192.168.200.8",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "A2600-10",
+    "TYPE": "TIA-2600",
+    "IP": "192.168.200.9",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "A2600-11",
+    "TYPE": "TIA-2600",
+    "IP": "192.168.200.10",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "A2600-12",
+    "TYPE": "TIA-2600",
+    "IP": "192.168.200.11",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "A2600-13",
+    "TYPE": "TIA-2600",
+    "IP": "192.168.200.12",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "A2600-14",
+    "TYPE": "TIA-2600",
+    "IP": "192.168.200.13",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "A2600-15",
+    "TYPE": "TIA-2600",
+    "IP": "192.168.200.14",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "A2600-16",
+    "TYPE": "TIA-2600",
+    "IP": "192.168.200.15",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "A2600-17",
+    "TYPE": "TIA-2600",
+    "IP": "192.168.200.16",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "A2600-18",
+    "TYPE": "TIA-2600",
+    "IP": "192.168.200.17",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "A2600-19",
+    "TYPE": "TIA-2600",
+    "IP": "192.168.200.18",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "A2600-20",
+    "TYPE": "TIA-2600",
+    "IP": "192.168.200.19",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "A2600-21",
+    "TYPE": "TIA-2600",
+    "IP": "192.168.200.20",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "A2600-22",
+    "TYPE": "TIA-2600",
+    "IP": "192.168.200.21",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "A2600-23",
+    "TYPE": "TIA-2600",
+    "IP": "192.168.200.22",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "A2600-24",
+    "TYPE": "TIA-2600",
+    "IP": "192.168.200.23",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "A2600-25",
+    "TYPE": "TIA-2600",
+    "IP": "192.168.200.24",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "A2600-26",
+    "TYPE": "TIA-2600",
+    "IP": "192.168.200.25",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "A2600-27",
+    "TYPE": "TIA-2600",
+    "IP": "192.168.200.26",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "A2600-28",
+    "TYPE": "TIA-2600",
+    "IP": "192.168.200.27",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "A2600-30",
+    "TYPE": "TIA-2600",
+    "IP": "192.168.200.28",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "A2600-31",
+    "TYPE": "TIA-2600",
+    "IP": "192.168.200.29",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "A2600-32",
+    "TYPE": "TIA-2600",
+    "IP": "192.168.200.30",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "A2600-33",
+    "TYPE": "TIA-2600",
+    "IP": "192.168.200.31",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "A2600-35",
+    "TYPE": "TIA-2600",
+    "IP": "192.168.200.32",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "A2600-36",
+    "TYPE": "TIA-2600",
+    "IP": "192.168.200.33",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "A2600-41",
+    "TYPE": "TIA-2600",
+    "IP": "192.168.200.34",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "A2600-43",
+    "TYPE": "TIA-2600",
+    "IP": "192.168.200.35",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "A2600-45",
+    "TYPE": "TIA-2600",
+    "IP": "192.168.200.36",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "A2600-46",
+    "TYPE": "TIA-2600",
+    "IP": "192.168.200.37",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "A2600-50",
+    "TYPE": "TIA-2600",
+    "IP": "192.168.200.38",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "A2600-51",
+    "TYPE": "TIA-2600",
+    "IP": "192.168.200.39",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "A2600-52",
+    "TYPE": "TIA-2600",
+    "IP": "192.168.200.40",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "A2600-53",
+    "TYPE": "TIA-2600",
+    "IP": "192.168.200.41",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "A2600-54",
+    "TYPE": "TIA-2600",
+    "IP": "192.168.200.42",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "A2600-55",
+    "TYPE": "TIA-2600",
+    "IP": "192.168.200.43",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "A2600-56",
+    "TYPE": "TIA-2600",
+    "IP": "192.168.200.44",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "A3050-34",
+    "TYPE": "FTO-3050",
+    "IP": "192.168.200.45",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "A3050-37",
+    "TYPE": "FTO-3050",
+    "IP": "192.168.200.46",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "A3050-38",
+    "TYPE": "FTO-3050",
+    "IP": "192.168.200.47",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "A3050-39",
+    "TYPE": "FTO-3050",
+    "IP": "192.168.200.48",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "A3050-40",
+    "TYPE": "FTO-3050",
+    "IP": "192.168.200.49",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "A3050-42",
+    "TYPE": "FTO-3050",
+    "IP": "192.168.200.50",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "A3050-47",
+    "TYPE": "FTO-3050",
+    "IP": "192.168.200.51",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "A3050-48",
+    "TYPE": "FTO-3050",
+    "IP": "192.168.200.52",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "A3050-49",
+    "TYPE": "FTO-3050",
+    "IP": "192.168.200.53",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "G103",
+    "TYPE": "TFPG105",
+    "IP": "192.168.200.54",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "GT-24",
+    "TYPE": "GT-1318P",
+    "IP": "192.168.200.55",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "GT-25",
+    "TYPE": "GT-480P",
+    "IP": "192.168.200.56",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "GT-26",
+    "TYPE": "GT-1318P",
+    "IP": "192.168.200.57",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "GT-27",
+    "TYPE": "GT-480P",
+    "IP": "192.168.200.58",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "GT-30",
+    "TYPE": "GT-1318P",
+    "IP": "192.168.200.59",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "GT-31",
+    "TYPE": "GT-480P",
+    "IP": "192.168.200.60",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "GT-32",
+    "TYPE": "GT-480P",
+    "IP": "192.168.200.61",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "RS236-01",
+    "TYPE": "236RDF2B",
+    "IP": "192.168.200.62",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "RS236-02",
+    "TYPE": "236RDF2K",
+    "IP": "192.168.200.63",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "RS236-03",
+    "TYPE": "236RDF2C",
+    "IP": "192.168.200.64",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "RS236-04",
+    "TYPE": "236RDF2D",
+    "IP": "192.168.200.65",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "RS236-05",
+    "TYPE": "236RDF2P",
+    "IP": "192.168.200.66",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "RS236-06",
+    "TYPE": "236RDF2G",
+    "IP": "192.168.200.67",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "RS236-07",
+    "TYPE": "236RDF2L",
+    "IP": "192.168.200.68",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "RS236-08",
+    "TYPE": "236RDF2F",
+    "IP": "192.168.200.69",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "RS236-09",
+    "TYPE": "236RDF2H",
+    "IP": "192.168.200.186",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "RS236-10",
+    "TYPE": "236RDF2E",
+    "IP": "192.168.200.71",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "RS236-11",
+    "TYPE": "236RDF2M",
+    "IP": "192.168.200.72",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "RS236-12",
+    "TYPE": "新機台測試",
+    "IP": "192.168.200.73",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "S060-01",
+    "TYPE": "ATS-060",
+    "IP": "192.168.200.74",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "S060-03",
+    "TYPE": "ATS-060",
+    "IP": "192.168.200.75",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "S060-05",
+    "TYPE": "ATS-060",
+    "IP": "192.168.200.76",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "S060-05",
+    "TYPE": "ATS-060",
+    "IP": "192.168.200.77",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "S060-05",
+    "TYPE": "ATS-060",
+    "IP": "192.168.200.78",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "S060-06",
+    "TYPE": "ATS-060",
+    "IP": "192.168.200.79",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "S060-07",
+    "TYPE": "ATS-060",
+    "IP": "192.168.200.80",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "S060-08",
+    "TYPE": "ATS-060",
+    "IP": "192.168.200.81",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "S060-09",
+    "TYPE": "ATS-060",
+    "IP": "192.168.200.82",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "S060-10",
+    "TYPE": "ATS-060",
+    "IP": "192.168.200.83",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "S124-11",
+    "TYPE": "ATS-124",
+    "IP": "192.168.200.84",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "S124-12",
+    "TYPE": "ATS-124",
+    "IP": "192.168.200.85",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "S124-13",
+    "TYPE": "ATS-124",
+    "IP": "192.168.200.86",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "S124-14",
+    "TYPE": "ATS-124",
+    "IP": "192.168.200.87",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "S124-15",
+    "TYPE": "ATS-124",
+    "IP": "192.168.200.88",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "S124-16",
+    "TYPE": "ATS-124",
+    "IP": "192.168.200.89",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "S160-16",
+    "TYPE": "ATS-160",
+    "IP": "192.168.200.90",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "S160-17",
+    "TYPE": "ATS-160",
+    "IP": "192.168.200.91",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "S160-18",
+    "TYPE": "ATS-160",
+    "IP": "192.168.200.92",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "S160-19",
+    "TYPE": "ATS-160",
+    "IP": "192.168.200.93",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "S160-21",
+    "TYPE": "ATS-160",
+    "IP": "192.168.200.94",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "S160-22",
+    "TYPE": "ATS-160",
+    "IP": "192.168.200.95",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "S160-23",
+    "TYPE": "ATS-160",
+    "IP": "192.168.200.96",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "SC-01",
+    "TYPE": "SC-048",
+    "IP": "192.168.200.97",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "SC-02",
+    "TYPE": "SC-812",
+    "IP": "192.168.200.98",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "SC-03",
+    "TYPE": "SC-168",
+    "IP": "192.168.200.99",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "SC-04",
+    "TYPE": "236RDF2A",
+    "IP": "192.168.200.100",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "SC-05",
+    "TYPE": "236RDF2N",
+    "IP": "192.168.200.101",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "TH3000-63",
+    "TYPE": "THSN-3000",
+    "IP": "192.168.200.102",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "V171-28",
+    "TYPE": 1710,
+    "IP": "192.168.200.103",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "V171-29",
+    "TYPE": 1710,
+    "IP": "192.168.200.104",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "W100-02",
+    "TYPE": "TSW-100T",
+    "IP": "192.168.200.105",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "W100-03",
+    "TYPE": "TSW-100T",
+    "IP": "192.168.200.106",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "W100-04",
+    "TYPE": "TSW-100T",
+    "IP": "192.168.200.107",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "W100-05",
+    "TYPE": "TSW-100T",
+    "IP": "192.168.200.108",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "W100-06",
+    "TYPE": "TSW-100T",
+    "IP": "192.168.200.109",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "W100-07",
+    "TYPE": "TSW-100T",
+    "IP": "192.168.200.110",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "W100-08",
+    "TYPE": "TSW-100T",
+    "IP": "192.168.200.111",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "W100-09",
+    "TYPE": "TSW-100T",
+    "IP": "192.168.200.112",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "W100-10",
+    "TYPE": "TSW-100T",
+    "IP": "192.168.200.113",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "W100-11",
+    "TYPE": "TSW-100T",
+    "IP": "192.168.200.114",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "W100-12",
+    "TYPE": "TSW-100T",
+    "IP": "192.168.200.115",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "W100-13",
+    "TYPE": "TSW-100T",
+    "IP": "192.168.200.116",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "W100-14",
+    "TYPE": "TSW-100T",
+    "IP": "192.168.200.117",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "W100-15",
+    "TYPE": "TSW-100T",
+    "IP": "192.168.200.118",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "W100-16",
+    "TYPE": "TSW-100T",
+    "IP": "192.168.200.119",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "W100-17",
+    "TYPE": "TSW-100T",
+    "IP": "192.168.200.120",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "W100-18",
+    "TYPE": "TSW-100T",
+    "IP": "192.168.200.121",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "W100-19",
+    "TYPE": "TSW-100T",
+    "IP": "192.168.200.122",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "W100-20",
+    "TYPE": "TSW-100T",
+    "IP": "192.168.200.123",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "W100-21",
+    "TYPE": "TSW-100T",
+    "IP": "192.168.200.124",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "W100-22",
+    "TYPE": "TSW-100T",
+    "IP": "192.168.200.125",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "W100-23",
+    "TYPE": "TSW-100T",
+    "IP": "192.168.200.126",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "W100-24",
+    "TYPE": "TSW-100T",
+    "IP": "192.168.200.127",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "W100-25",
+    "TYPE": "TSW-100T",
+    "IP": "192.168.200.128",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "W100-26",
+    "TYPE": "TSW-100T",
+    "IP": "192.168.200.129",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "W100-27",
+    "TYPE": "TSW-100T",
+    "IP": "192.168.200.130",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "W100-29",
+    "TYPE": "TSW-100T",
+    "IP": "192.168.200.131",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "W100-30",
+    "TYPE": "TSW-168T",
+    "IP": "192.168.200.132",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "W100-31",
+    "TYPE": "TSW-100T",
+    "IP": "192.168.200.133",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "W100-32",
+    "TYPE": "TSW-100T",
+    "IP": "192.168.200.134",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "W100-35",
+    "TYPE": "TSW-100T",
+    "IP": "192.168.200.135",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "W100-36",
+    "TYPE": "TSW-100T",
+    "IP": "192.168.200.136",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "W100-41",
+    "TYPE": "TSW-100T",
+    "IP": "192.168.200.137",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "W100-43",
+    "TYPE": "TSW-100T",
+    "IP": "192.168.200.138",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "W100-44",
+    "TYPE": "TSW-100T",
+    "IP": "192.168.200.139",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "W100-48",
+    "TYPE": "TSW-100T",
+    "IP": "192.168.200.140",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "W100-49",
+    "TYPE": "TSW-100T",
+    "IP": "192.168.200.141",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "W100-53",
+    "TYPE": "TSW-100T",
+    "IP": "192.168.200.142",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "W100-54",
+    "TYPE": "TSW-100T",
+    "IP": "192.168.200.143",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "W100-55",
+    "TYPE": "TSW-100T",
+    "IP": "192.168.200.144",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "W100-56",
+    "TYPE": "TSW-100T",
+    "IP": "192.168.200.145",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "W100-57",
+    "TYPE": "TSW-100T",
+    "IP": "192.168.200.146",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "W100-58",
+    "TYPE": "TSW-100T",
+    "IP": "192.168.200.147",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "W168-33",
+    "TYPE": "TSW-168T",
+    "IP": "192.168.200.148",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "W168-34",
+    "TYPE": "TSW-168T",
+    "IP": "192.168.200.149",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "W168-37",
+    "TYPE": "TSW-100T",
+    "IP": "192.168.200.150",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "W168-38",
+    "TYPE": "TSW-168T",
+    "IP": "192.168.200.151",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "W168-42",
+    "TYPE": "TSW-168T",
+    "IP": "192.168.200.152",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "W168-45",
+    "TYPE": "TSW-168T",
+    "IP": "192.168.200.153",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "W168-63",
+    "TYPE": "TSW-168T",
+    "IP": "192.168.200.154",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "W250-39",
+    "TYPE": "HSW-250J",
+    "IP": "192.168.200.155",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "W250-40",
+    "TYPE": "HSW-250J",
+    "IP": "192.168.200.156",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "W3000-46",
+    "TYPE": "SPH-3000",
+    "IP": "192.168.200.157",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "W3000-47",
+    "TYPE": "SPH-3000",
+    "IP": "192.168.200.158",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "W3000-51",
+    "TYPE": "SPH-3000",
+    "IP": "192.168.200.159",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "W3000-52",
+    "TYPE": "SPH-3000",
+    "IP": "192.168.200.160",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "W303-59",
+    "TYPE": "TSW-303",
+    "IP": "192.168.200.161",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "W303-60",
+    "TYPE": "TSW-303",
+    "IP": "192.168.200.162",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "W303-61",
+    "TYPE": "TSW-303",
+    "IP": "192.168.200.163",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
+  },
+  {
+    "ID": "W303-62",
+    "TYPE": "TSW-303",
+    "IP": "192.168.200.164",
+    "NOTE": "",
+    "STATUS": "",
+    "ALIVE": 0,
+    "QTY": 0
   }
 ]
