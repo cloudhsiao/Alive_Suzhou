@@ -24,16 +24,16 @@
                 }
                 var type = 0;
                 var ID = this.id;
-                if (ID.indexOf('E') > -1) {                         // 加締
+                if (ID.indexOf('W') > -1) {                           // 加締
                   type = 1;
                 } else
-                if (ID.indexOf('G') > -1) {                         // 組立
+                if (ID.indexOf('A') > -1) {                           // 組立
                   type = 2;
                 } else
-                if (ID.indexOf('A') > -1) {                         // 老化
+                if (ID.indexOf('S') > -1 || ID.indexOf('GT') > -1) {  // 老化
                   type = 3;
                 } else
-                if (ID.indexOf('T') > -1 || ID.indexOf('C') > -1) { // 其他
+                if (ID.indexOf('RS') > -1 || ID.indexOf('CS') > -1) { // 其他
                   type = 5;
                 }
                 
@@ -48,9 +48,10 @@
             socket.on('PING', function(msg) {
               console.log('get PING!');
               // 0. reset num
-              totalE = 0;    totalG = 0;    totalA = 0;    totalTC = 0;
-              goodE = 0;     goodG = 0;     goodA = 0;     goodTC = 0;
-              notGoodE = 0; notGoodG = 0; notGoodA = 0; notGoodTC = 0;
+// E   G   A   TC
+              totalW = 0;    totalA = 0;    totalSGT = 0;    totalRSCS = 0;
+              goodW = 0;     goodA = 0;     goodSGT = 0;     goodRSCS = 0;
+              notGoodW = 0; notGoodA = 0; notGoodSGT = 0; notGoodTC = 0;
               // 0. parse income data into totalData
               totalData = jQuery.parseJSON(msg);
 
