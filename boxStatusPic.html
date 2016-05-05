@@ -10,10 +10,10 @@
             var tatalData;
             var mapDoc;
 
-            var totalE = 0,    totalG = 0,    totalA = 0,    totalTC = 0;
-            var goodE = 0,     goodG = 0,     goodA = 0,     goodTC = 0;
-            var notGoodE = 0, notGoodG = 0, notGoodA = 0, notGoodTC = 0;
-            var rateE = 0,     rateG = 0,     rateA = 0,     rateTC = 0;
+            var totalW = 0,    totalA = 0,    totalSGT = 0,    totalRSSC = 0;
+            var goodW = 0,     goodA = 0,     goodSGT = 0,     goodRSSC = 0;
+            var notGoodW = 0,  notGoodA = 0,  notGoodSGT = 0,  notGoodRSSC = 0;
+            var rateW = 0,     rateA = 0,     rateSGT = 0,     rateRSSC = 0;
 
             var totalMachine = 0, totalRed = 0, totalGray = 0;
 
@@ -33,7 +33,7 @@
                 if (ID.indexOf('S') > -1 || ID.indexOf('GT') > -1) {  // 老化
                   type = 3;
                 } else
-                if (ID.indexOf('RS') > -1 || ID.indexOf('CS') > -1) { // 其他
+                if (ID.indexOf('RS') > -1 || ID.indexOf('SC') > -1) { // 其他
                   type = 5;
                 }
                 
@@ -51,7 +51,7 @@
 // E   G   A   TC
               totalW = 0;    totalA = 0;    totalSGT = 0;    totalRSCS = 0;
               goodW = 0;     goodA = 0;     goodSGT = 0;     goodRSCS = 0;
-              notGoodW = 0; notGoodA = 0; notGoodSGT = 0; notGoodTC = 0;
+              notGoodW = 0;  notGoodA = 0;  notGoodSGT = 0;  notGoodRSCS = 0;
               // 0. parse income data into totalData
               totalData = jQuery.parseJSON(msg);
 
@@ -71,9 +71,6 @@
                 allMachine[idx].addEventListener('click', showPopup);
 
                 // special for G111_2, G111_3
-                if (allMachine[idx].id === 'G111_2' || allMachine[idx].id === 'G111_3') {
-                  allMachine[idx].style.fill = '#cccccc';
-                }
                 var data = totalData.filter(function(obj) {
                   return obj.ID === allMachine[idx].id;
                 });
@@ -155,50 +152,50 @@
             $('#SELECT_TC option').remove();
             */
             function count(ID, isGood) {
-              if (ID.indexOf('E') > -1) {                         // 加締
-                totalE++;
-                if (Boolean(isGood)) { goodE++; } else { notGoodE++; }
-                rateE = new Number(goodE / totalE * 100);
+              if (ID.indexOf('W') > -1) {                         // 加締
+                totalW++;
+                if (Boolean(isGood)) { goodW++; } else { notGoodW++; }
+                rateW = new Number(goodW / totalW * 100);
 
                 //$('#SELECT_E').append($('<option></option>').attr('value', ID).text(ID));
               } else
-              if (ID.indexOf('G') > -1) {                         // 組立
-                totalG++;
-                if (Boolean(isGood)) { goodG++; } else { notGoodG++; }
-                rateG = new Number(goodG / totalG * 100);
-
-                //$('#SELECT_G').append($('<option></option>').attr('value', ID).text(ID));
-              } else
-              if (ID.indexOf('A') > -1) {                         // 老化
+              if (ID.indexOf('A') > -1) {                         // 組立
                 totalA++;
                 if (Boolean(isGood)) { goodA++; } else { notGoodA++; }
                 rateA = new Number(goodA / totalA * 100);
 
+                //$('#SELECT_G').append($('<option></option>').attr('value', ID).text(ID));
+              } else
+              if (ID.indexOf('S') > -1) {                         // 老化
+                totalS++;
+                if (Boolean(isGood)) { goodS++; } else { notGoodS++; }
+                rateS = new Number(goodS / totalS * 100);
+
                 //$('#SELECT_A').append($('<option></option>').attr('value', ID).text(ID));
               } else
-              if (ID.indexOf('T') > -1 || ID.indexOf('C') > -1) { // 其他
-                totalTC++;
-                if (Boolean(isGood)) { goodTC++; } else { notGoodTC++; }
-                rateTC = new Number(goodTC / totalTC * 100);
+              if (ID.indexOf('RS') > -1 || ID.indexOf('SC') > -1) { // 其他
+                totalRSSC++;
+                if (Boolean(isGood)) { goodRSSC++; } else { notGoodRSSC++; }
+                rateRSSC = new Number(goodRSSC / totalRSSC * 100);
 
                 //$('#SELECT_TC').append($('<option></option>').attr('value', ID).text(ID));
               }
-              $('#E_TOTAL').html(totalE);
-              $('#E_GOOD').html(goodE);
-              $('#E_NOTGOOD').html(notGoodE);
-              $('#E_RATE').html(rateE.toFixed(2) + '%');
-              $('#G_TOTAL').html(totalG);
-              $('#G_GOOD').html(goodG);
-              $('#G_NOTGOOD').html(notGoodG);
-              $('#G_RATE').html(rateG.toFixed(2) + '%');
+              $('#W_TOTAL').html(totalW);
+              $('#W_GOOD').html(goodW);
+              $('#W_NOTGOOD').html(notGoodW);
+              $('#W_RATE').html(rateW.toFixed(2) + '%');
               $('#A_TOTAL').html(totalA);
               $('#A_GOOD').html(goodA);
               $('#A_NOTGOOD').html(notGoodA);
               $('#A_RATE').html(rateA.toFixed(2) + '%');
-              $('#TC_TOTAL').html(totalTC);
-              $('#TC_GOOD').html(goodTC);
-              $('#TC_NOTGOOD').html(notGoodTC);
-              $('#TC_RATE').html(rateTC.toFixed(2) + '%');
+              $('#S_TOTAL').html(totalS);
+              $('#S_GOOD').html(goodS);
+              $('#S_NOTGOOD').html(notGoodS);
+              $('#S_RATE').html(rateS.toFixed(2) + '%');
+              $('#RSSC_TOTAL').html(totalRSSC);
+              $('#RSSC_GOOD').html(goodRSSC);
+              $('#RSSC_NOTGOOD').html(notGoodRSSC);
+              $('#RSSC_RATE').html(rateRSSC.toFixed(2) + '%');
             }
 
             // 計算各機種的稼動率 --------END
@@ -355,34 +352,34 @@
                     <tr>
                         <td>加締</td>
                         <td><object data="/square.svg" type="image/svg+xml" width="30%" height="30%"></object></td>
-                        <td id="E_TOTAL"></td>
-                        <td id="E_GOOD" colspan="2"></td>
-                        <td id="E_NOTGOOD" colspan="3"></td>
-                        <td id="E_RATE"></td>
+                        <td id="W_TOTAL"></td>
+                        <td id="W_GOOD" colspan="2"></td>
+                        <td id="W_NOTGOOD" colspan="3"></td>
+                        <td id="W_RATE"></td>
                     </tr>
                     <tr>
                         <td>組立</td>
                         <td><object data="/triangle.svg" type="image/svg+xml" width="30%" height="30%"></object></td>
-                        <td id="G_TOTAL"></td>
-                        <td id="G_GOOD" colspan="2"></td>
-                        <td id="G_NOTGOOD" colspan="3"></td>
-                        <td id="G_RATE"></td>
-                    </tr>
-                    <tr>
-                        <td>老化</td>
-                        <td><object data="/circle.svg" type="image/svg+xml" width="30%" height="30%"></object></td>
                         <td id="A_TOTAL"></td>
                         <td id="A_GOOD" colspan="2"></td>
                         <td id="A_NOTGOOD" colspan="3"></td>
                         <td id="A_RATE"></td>
                     </tr>
                     <tr>
+                        <td>老化</td>
+                        <td><object data="/circle.svg" type="image/svg+xml" width="30%" height="30%"></object></td>
+                        <td id="S_TOTAL"></td>
+                        <td id="S_GOOD" colspan="2"></td>
+                        <td id="S_NOTGOOD" colspan="3"></td>
+                        <td id="S_RATE"></td>
+                    </tr>
+                    <tr>
                         <td>其他(選別，加工切角)</td>
                         <td><object data="/pentagon.svg" type="image/svg+xml" width="30%" height="30%"></object></td>
-                        <td id="TC_TOTAL"></td>
-                        <td id="TC_GOOD" colspan="2"></td>
-                        <td id="TC_NOTGOOD" colspan="3"></td>
-                        <td id="TC_RATE"></td>
+                        <td id="RSSC_TOTAL"></td>
+                        <td id="RSSC_GOOD" colspan="2"></td>
+                        <td id="RSSC_NOTGOOD" colspan="3"></td>
+                        <td id="RSSC_RATE"></td>
                     </tr>
                 </tbody>
             </table>
