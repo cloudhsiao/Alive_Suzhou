@@ -67,7 +67,7 @@ function sendMail(msg) {
       text:msg,
       from: "ZhenHai 機台存活率檢查 <freeman@zhenhai.com.tw>",
       to: "z_h_e_n_h_a_i@mailinator.com",
-      subject: "台容 謝崗廠 機台存活率過低"
+      subject: "台容 蘇州廠 機台存活率過低"
     },
     function(err, msg) {
       console.log("err: " + err || msg);

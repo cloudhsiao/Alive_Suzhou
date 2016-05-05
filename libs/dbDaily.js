@@ -16,11 +16,11 @@ const BIG = "16 - 18";
 const MEDIUM = "10 - 12.5";
 const SMALL = "5 - 8";
 
-const TYPE_E = 1;
-const TYPE_G = 2;
-const TYPE_A = 3;
-const TYPE_A4 = 4;
-const TYPE_TC = 5;
+const TYPE_E = 1;  // 加締
+const TYPE_G = 2;  // 組立
+const TYPE_A = 3;  // 老化
+const TYPE_A4 = 4; // 選別
+const TYPE_TC = 5; // 加工
 
 exports.getDailySum = function queryDatabase(cb) {
   MongoClient.connect("mongodb://localhost:27017/zhenhai", function(err, db) {
