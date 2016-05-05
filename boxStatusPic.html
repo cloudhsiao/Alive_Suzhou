@@ -167,9 +167,9 @@
                 //$('#SELECT_G').append($('<option></option>').attr('value', ID).text(ID));
               } else
               if (ID.indexOf('S') > -1) {                         // 老化
-                totalS++;
-                if (Boolean(isGood)) { goodS++; } else { notGoodS++; }
-                rateS = new Number(goodS / totalS * 100);
+                totalSGT++;
+                if (Boolean(isGood)) { goodSGT++; } else { notGoodSGT++; }
+                rateSGT = new Number(goodSGT / totalSGT * 100);
 
                 //$('#SELECT_A').append($('<option></option>').attr('value', ID).text(ID));
               } else
@@ -188,10 +188,10 @@
               $('#A_GOOD').html(goodA);
               $('#A_NOTGOOD').html(notGoodA);
               $('#A_RATE').html(rateA.toFixed(2) + '%');
-              $('#S_TOTAL').html(totalS);
-              $('#S_GOOD').html(goodS);
-              $('#S_NOTGOOD').html(notGoodS);
-              $('#S_RATE').html(rateS.toFixed(2) + '%');
+              $('#SGT_TOTAL').html(totalSGT);
+              $('#SGT_GOOD').html(goodSGT);
+              $('#SGT_NOTGOOD').html(notGoodSGT);
+              $('#SGT_RATE').html(rateSGT.toFixed(2) + '%');
               $('#RSSC_TOTAL').html(totalRSSC);
               $('#RSSC_GOOD').html(goodRSSC);
               $('#RSSC_NOTGOOD').html(notGoodRSSC);
@@ -368,10 +368,10 @@
                     <tr>
                         <td>老化</td>
                         <td><object data="/circle.svg" type="image/svg+xml" width="30%" height="30%"></object></td>
-                        <td id="S_TOTAL"></td>
-                        <td id="S_GOOD" colspan="2"></td>
-                        <td id="S_NOTGOOD" colspan="3"></td>
-                        <td id="S_RATE"></td>
+                        <td id="SGT_TOTAL"></td>
+                        <td id="SGT_GOOD" colspan="2"></td>
+                        <td id="SGT_NOTGOOD" colspan="3"></td>
+                        <td id="SGT_RATE"></td>
                     </tr>
                     <tr>
                         <td>其他(選別，加工切角)</td>
