@@ -30,7 +30,8 @@
                 if (ID.indexOf('A') > -1) {                           // 組立
                   type = 2;
                 } else
-                if (ID.indexOf('S') > -1 || ID.indexOf('GT') > -1) {  // 老化
+                if (ID.indexOf('S060') > -1 || ID.indexOf('S124') > -1 || ID.indexOf('S160') > -1 || ID.indexOf('V171') > -1 || ID.indexOf('GT') > -1) {  // 老化
+                  console.log("====>" + ID);
                   type = 3;
                 } else
                 if (ID.indexOf('RS') > -1 || ID.indexOf('SC') > -1) { // 其他
@@ -166,7 +167,7 @@
 
                 //$('#SELECT_G').append($('<option></option>').attr('value', ID).text(ID));
               } else
-              if (ID.indexOf('S') > -1) {                         // 老化
+	      if (ID.indexOf('S060') > -1 || ID.indexOf('S124') > -1 || ID.indexOf('S160') > -1 || ID.indexOf('V171') > -1 || ID.indexOf('GT') > -1) { // 老化
                 totalSGT++;
                 if (Boolean(isGood)) { goodSGT++; } else { notGoodSGT++; }
                 rateSGT = new Number(goodSGT / totalSGT * 100);
