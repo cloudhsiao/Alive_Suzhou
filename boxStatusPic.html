@@ -128,7 +128,8 @@
               $('#data table').append('<tr>' +
                                         '<th>ID</th>' + 
                                         '<th>類型</th>' + 
-                                        '<th>IP地址</th>'+ 
+                                        '<th>IP地址</th>'+
+                                        '<th>尺寸</th>' +
                                         '<th>備註</th>' + 
                                         '<th>機器狀態</th>' + 
                                         '<th>監控上線狀態(1:線上)</th>' + 
@@ -137,6 +138,7 @@
                 $('#data table').append('<tr><td width="10%">' + totalData[idx].ID   + '</td>' +
                                             '<td width="10%">' + totalData[idx].TYPE + '</td>' +
                                             '<td width="10%">' + totalData[idx].IP   + '</td>' +
+                                            '<td width="10%">' + totalData[idx].SIZE + ' Φ' + '</td>' +
                                             '<td width="10%">' + totalData[idx].NOTE + '</td>' +
                                             '<td width="10%">' + totalData[idx].STATUS + '</td>' +
                                             '<td width="10%">' + totalData[idx].ALIVE + '</td>' +
