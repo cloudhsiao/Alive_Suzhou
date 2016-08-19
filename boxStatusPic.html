@@ -99,17 +99,17 @@
                     if (data[0].STATUS === '05') {       // status 05 (idle)
                       allMachine[idx].style.fill = '#ffff00';
                       count(data[0].ID, 1);
-                      console.log('ID: ' + data[idx].ID + ', status: idle, reason: status == 05');
+                      console.log('ID: ' + data[0].ID + ', status: idle, reason: status == 05');
                     } else                               // standby
                     if (data[0].STATUS === '10' || data[0].STATUS === '') { 
                       allMachine[idx].style.fill = '#ff0000';
                       count(data[0].ID, 0);
-                      console.log('ID: ' + data[idx].ID + ', status: stand-by, reason: status == ' + data[idx].STATUS);
+                      console.log('ID: ' + data[0].ID + ', status: stand-by, reason: status == ' + data[0].STATUS);
                     } else                               // status 09 with no qty!
                     if (data[0].STATUS === '09' && data[0].QTY == 0) {
                       allMachine[idx].style.fill = '#ff0000';
                       count(data[0].ID, 0);
-                      console.log('ID: ' + data[idx].ID + ', status: stand-by, reason: status == 09 && qty == 0');
+                      console.log('ID: ' + data[0].ID + ', status: stand-by, reason: status == 09 && qty == 0');
                     } else {                             // others, no special situation.
                       allMachine[idx].style.fill = '#00ff00';
                       count(data[0].ID, 1);
