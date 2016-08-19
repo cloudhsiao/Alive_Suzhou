@@ -47,6 +47,7 @@
 
             // 接收到 PING 資料 --------START
             socket.on('PING', function(msg) {
+              console.log('==========================================================================')
               console.log('get PING!');
               // 0. reset num
 // E   G   A   TC
@@ -71,7 +72,6 @@
                 allMachine[idx].removeEventListener('click', showPopup);
                 allMachine[idx].addEventListener('click', showPopup);
 
-                // special for G111_2, G111_3
                 var data = totalData.filter(function(obj) {
                   return obj.ID === allMachine[idx].id;
                 });
@@ -99,14 +99,17 @@
                     if (data[0].STATUS === '05') {       // status 05 (idle)
                       allMachine[idx].style.fill = '#ffff00';
                       count(data[0].ID, 1);
+                      console.log('ID: ' + data[idx].ID + ', status: idle, reason: status == 05');
                     } else                               // standby
                     if (data[0].STATUS === '10' || data[0].STATUS === '') { 
                       allMachine[idx].style.fill = '#ff0000';
                       count(data[0].ID, 0);
+                      console.log('ID: ' + data[idx].ID + ', status: stand-by, reason: status == ' + data[idx].STATUS);
                     } else                               // status 09 with no qty!
                     if (data[0].STATUS === '09' && data[0].QTY == 0) {
                       allMachine[idx].style.fill = '#ff0000';
                       count(data[0].ID, 0);
+                      console.log('ID: ' + data[idx].ID + ', status: stand-by, reason: status == 09 && qty == 0');
                     } else {                             // others, no special situation.
                       allMachine[idx].style.fill = '#00ff00';
                       count(data[0].ID, 1);
@@ -118,8 +121,9 @@
                     count(data[0].ID, 0);
                   }
 
-                  if (data[0].NOTE !== '') {             // not install Pi
+                  if (data[0].NOTE !== '' || data[0].IP === '') {             // not install Pi
                     allMachine[idx].style.fill = '#cccccc';
+                    allMachine[idx].removeEventListener('click', showPopup);
                   }
                 }
               }
