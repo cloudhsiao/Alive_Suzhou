@@ -104,7 +104,7 @@
                     if (data[0].STATUS === '10' || data[0].STATUS === '') { 
                       allMachine[idx].style.fill = '#ff0000';
                       count(data[0].ID, 0);
-                      console.log('ID: ' + data[0].ID + ', status: stand-by, reason: status == ' + data[0].STATUS);
+                      console.log('ID: ' + data[0].ID + ', status: stand-by, reason: status == "' + data[0].STATUS + '"');
                     } else                               // status 09 with no qty!
                     if (data[0].STATUS === '09' && data[0].QTY == 0) {
                       allMachine[idx].style.fill = '#ff0000';
@@ -119,11 +119,13 @@
                   if(data[0].ALIVE == 0 && data[0].NOTE === '') { 
                     allMachine[idx].style.fill = '#0000ff';
                     count(data[0].ID, 0);
+                    console.log('ID: ' + data[0].ID + ', status: offline, reason: alive == 0 && note == ""');
                   }
 
                   if (data[0].NOTE !== '' || data[0].IP === '') {             // not install Pi
                     allMachine[idx].style.fill = '#cccccc';
                     allMachine[idx].removeEventListener('click', showPopup);
+                    console.log('ID: ' + data[0].ID + ', status: not-installed-yet, reason: note == ' + data[0].NOTE + ', IP == "' + data[0].IP + '"');
                   }
                 }
               }
